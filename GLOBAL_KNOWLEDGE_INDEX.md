@@ -269,9 +269,12 @@
   2. **Google Takeout + Patent Bootloader / Instantiator Synthesis Pipeline**: Local streaming parser to distill Google Takeout archives and Zachariah's patented AI Bootloader/Instantiator into portable cross-model agent initialization seeds (Gemini / Claude / Codex).
   3. **Universal DirectInput/XInput/HID Telemetry & Haptic Middleware ("SimBridge")**.
   4. **Cross-Model "Arbiter Forge" (Gemini + Claude + Codex Consensus & PINPOINT Gatekeeper)**.
-  5. **Sovereign In-Between Mediator & "Steering-Wheel" Human-Agency Harness ("NexusHelm" / "Interlock")**: Zero-natural-language typed semantic airlock, information-flow taint lattice, phantom credential brokering, and 5-speed autonomy gearbox with 3-way creative forks and asymmetric DualSense haptic friction.
+  5. **Sovereign In-Between Mediator & "Steering-Wheel" Human-Agency Harness ("NexusHelm" / "Interlock")**:
+     - **Reference Implementation:** [`C:\Users\Zachariah\aether agent\nexushelm\engine.py`](file:///C:/Users/Zachariah/aether%20agent/nexushelm/engine.py) & [`tests/test_nexushelm.py`](file:///C:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py) (10/10 unit, adversarial, and concurrency suites passing).
+     - **Verified Primitives:** Bidirectional Typed Semantic Airlock (`SemanticAirlock`), Application-Layer Phantom Token Broker (`PhantomTokenBroker`), SHA-256 Instruction-File Integrity Guard (`InstructionIntegrityGuard`), Monotonic Information-Flow Taint Lattice + Exit-Code-0 PINPOINT Promotion (`TaintLattice`), 5-Speed Autonomy Gearbox + Mandatory Rule-of-3 Forking + Asymmetric DualSense `0x21`/`0x26` Blast-Radius Haptics (`AutonomyGearbox`, `TradeoffFork`, `DualSenseHapticPacket`), and Zero-Dirty-Logic Quarantine Sieve (`QuarantineSieve`).
   6. **CROSSWIND: GROUND EFFECT (Atmospheric Flight Survival Simulation)**: Blade Element Theory, Ground Effect induced drag collapse $\sigma(h/b)$, crosswind crab-and-kick mechanics, DualSense dynamic pressure yoke stiffening ($q \propto v^2$), and 4-8 player storm evacuation co-op contracts.
 - **Autonomous Background Engine:**
   - **Global Skill:** [`C:\Users\Zachariah\.gemini\config\skills\slow-simmer-stimulative-thinking\SKILL.md`](file:///C:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md)
   - **Management Helper:** [`C:\Users\Zachariah\.gemini\config\skills\slow-simmer-stimulative-thinking\scripts\slow_simmer.ps1`](file:///C:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1)
+
 

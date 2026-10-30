@@ -261,6 +261,19 @@ export const INITIAL_BOUNTIES: Bounty[] = [
     milestone: 'HANDOFF-LF-001',
     summary: 'Local private Git forge with automatic token extraction and automated project sync across concurrent agent sessions.',
   },
+  {
+    id: 'BOUNTY-AET-008',
+    project: 'aether-agent',
+    title: 'NexusHelm Track 5: Sovereign In-Between Agent Mediator & Steering-Wheel Agency Harness',
+    status: 'COMPLETED',
+    claimant: 'Subagent DeepCoder',
+    dates: '2026-10-30',
+    domainTags: ['#haptics-adaptive-triggers', '#pinpoint-test-harness'],
+    dependencies: 'BOUNTY-AET-007',
+    artifacts: 'nexushelm/engine.py, nexushelm/tests/test_nexushelm.py (10/10 Passed)',
+    milestone: 'HANDOFF-007',
+    summary: 'Bidirectional Typed Semantic Airlock, Phantom Token Broker, SHA-256 Instruction Integrity Guard, Monotonic Taint Lattice, 5-Speed Gearbox + Rule-of-3 Forking + DualSense 0x21/0x26 Haptics, and Zero-Dirty-Logic Quarantine Sieve.',
+  },
 ];
 
 export const DOMAIN_TAGS: DomainTag[] = [
@@ -269,10 +282,10 @@ export const DOMAIN_TAGS: DomainTag[] = [
   { tag: '#motion-imu-fusion', label: 'IMU Fusion', description: 'Gyro + Accel complementary filters and sagittal projection', count: 4 },
   { tag: '#casiez-1euro-filter', label: '1€ Adaptive Filter', description: 'Casiez 1€ filter with branch-cut delta unwrapping', count: 1 },
   { tag: '#smoothstep-blending', label: 'C² Smootherstep', description: 'Ken Perlin C² polynomial auto-blend continuous transitions', count: 1 },
-  { tag: '#haptics-adaptive-triggers', label: 'Adaptive Triggers', description: 'Motor haptic effects (modes 0x05, 0x21, 0x26) & rumble routing', count: 2 },
+  { tag: '#haptics-adaptive-triggers', label: 'Adaptive Triggers', description: 'Motor haptic effects (modes 0x05, 0x21, 0x26) & rumble routing', count: 3 },
   { tag: '#capacitive-touchpad-gestures', label: 'Touchpad Gestures', description: 'Multi-touch capacitive coordinate flick glance parsing', count: 1 },
   { tag: '#game-modding-shift2', label: 'Game Mechanics', description: 'Stock XML dampening bypass & intro cinematic skipping', count: 2 },
-  { tag: '#pinpoint-test-harness', label: 'PINPOINT Testing', description: 'Deterministic hardware test harness (114 passing checks)', count: 1 },
+  { tag: '#pinpoint-test-harness', label: 'PINPOINT Testing', description: 'Deterministic hardware test harness (114 passing checks)', count: 2 },
   { tag: '#omnichorus-stream-engine', label: 'OmniChorus Core', description: 'Multi-stream fair-queuing chat and community attention router', count: 1 },
   { tag: '#omnichorus-currency-fx', label: 'Gift FX Ledger', description: 'Cross-platform monetization currency normalization', count: 1 },
   { tag: '#sponsor-proof-performance', label: 'Sponsor Proof', description: 'Cryptographically signed live sponsor attribution deck', count: 1 },
@@ -295,7 +308,7 @@ export const PROJECT_NODES: ProjectNode[] = [
     domain: 'Enterprise & Creator Multi-Stream Router',
     techStack: 'TypeScript, WebSockets, DWFQ, Web Audio VAD',
     status: 'ONLINE',
-    completedBounties: 0,
+    completedBounties: 3,
     totalBounties: 3,
   },
   {
@@ -310,11 +323,11 @@ export const PROJECT_NODES: ProjectNode[] = [
   {
     name: 'aether-agent',
     path: 'C:\\Users\\Zachariah\\aether agent',
-    domain: 'Sovereign Agent Core & Venture Headquarters',
-    techStack: 'Multi-Agent Network, Win32 HID',
-    status: 'STANDBY',
-    completedBounties: 0,
-    totalBounties: 0,
+    domain: 'Sovereign Agent Core & Venture Headquarters (Crosswind, OmniChorus, Voice Bridge, NexusHelm)',
+    techStack: 'Python 3, Node.js, Multi-Agent Network, Win32 HID',
+    status: 'ONLINE',
+    completedBounties: 8,
+    totalBounties: 8,
   },
 ];
 
