@@ -238,6 +238,12 @@ Inspired by the tactile physics of `vibrant-darwin` (where power steering amplif
      - $20 \le B(a) < 70$ (Local branch edit): Soft friction, confirmed via 1-click keyboard tap or soft DualSense R2 pull.
      - $B(a) \ge 70$ (Spend, deploy, external mutation): Hard detent (`TriggerMode=0x21` resistance + `0x26` 40 Hz pulse), requiring deliberate physical pull or typed signature.
 
+### 4. Verified Working Prototype (`c:\Users\Zachariah\aether agent\nexushelm\`)
+- **Architecture & Usage Guide:** [`README.md`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/README.md)
+- **Core Mediator Engine:** [`engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py) (Bidirectional Semantic Airlock, Phantom Token Broker, SHA-256 Instruction Guard, Taint Lattice + PINPOINT Promotion, 5-Speed Gearbox, Rule-of-3 Tradeoff Forker, DualSense `0x21`/`0x26` Haptic Packet Generator, and Zero-Dirty-Logic Quarantine Sieve)
+- **Interactive Simulation Runner:** [`demo_runner.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/demo_runner.py)
+- **Adversarial & Unit Test Suite:** [`tests/test_nexushelm.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py) (100% pass across 9 test suites)
+
 
 ---
 
