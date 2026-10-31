@@ -277,4 +277,91 @@
   - **Global Skill:** [`C:\Users\Zachariah\.gemini\config\skills\slow-simmer-stimulative-thinking\SKILL.md`](file:///C:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md)
   - **Management Helper:** [`C:\Users\Zachariah\.gemini\config\skills\slow-simmer-stimulative-thinking\scripts\slow_simmer.ps1`](file:///C:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1)
 
+---
 
+## 🔬 Crucible Verified Domain Extensions (1.13 - 1.18 & Synchronized Math)
+
+### 1.2 1st-Party Unified Player Turn & Lean Architecture (`#smoothstep-blending`, `#motion-imu-fusion`)
+- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L1447-L1486), [`SHARED_REPOSITORY.md`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#L26-L54)
+- **Primary Project:** `vibrant-darwin`
+- **Applicability:** Gyro steering in racing simulators, flight roll/yaw controls, camera tilt/pan fusion.
+
+#### Mathematical Foundation:
+1. **Non-Negative Sagittal Gravity Weights (Pitch-Inversion Immune, `xinput_proxy.cpp:1447-1453`):**
+   $$g_{yz} = \max\left(\sqrt{\hat{a}_y^2 + \hat{a}_z^2},\; 100.0\right),\quad n_y = \frac{|\hat{a}_y|}{g_{yz}} \ge 0,\quad n_z = \frac{|\hat{a}_z|}{g_{yz}} \ge 0$$
+2. **Sagittal Roll Rate & Orthogonal Turntable Yaw Rate (`xinput_proxy.cpp:1456-1458`):**
+   $$\omega_{\text{roll}} = -\left(\text{rateZ} \cdot n_y + \text{rateY} \cdot n_z\right),\quad \omega_{\text{turn}} = -\left(\text{rateY} \cdot n_y + \text{rateZ} \cdot n_z\right)$$
+3. **Power Weighting Ratio ($u$) & Ken Perlin's $C^2$ Smootherstep Blend ($s(u)$, `xinput_proxy.cpp:1464-1474`):**
+   $$u = \frac{\omega_{\text{roll}}^2}{\omega_{\text{roll}}^2 + \omega_{\text{turn}}^2},\quad s(u) = u^3 \left(6u^2 - 15u + 10\right)$$
+   $$\omega_{\text{fused}} = \begin{cases} 0.5(\omega_{\text{roll}} + \omega_{\text{turn}}) & \text{if } \omega_{\text{roll}}^2 + \omega_{\text{turn}}^2 < 10^{-4} \\ s(u) \cdot \omega_{\text{roll}} + (1 - s(u)) \cdot \omega_{\text{turn}} & \text{otherwise} \end{cases}$$
+4. **Loading Screen Exit $200\text{ ms}$ $C^2$ Transition Ramp (`xinput_proxy.cpp:2006-2025`):**
+   - When `XInputGetState` polling resumes after a scene-transition stall ($\Delta t > 1200\text{ ms}$), output `lx` is multiplied by $s(t / 200\text{ ms})$ over $t \in [0, 200\text{ ms}]$.
+
+---
+
+### 1.4 Dynamic Complementary Sensor Fusion, Virtual Rack Clamp & Recline/Turntable Immunity (`#motion-imu-fusion`)
+- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L973-L1016)
+- **Primary Project:** `vibrant-darwin`
+- **Applicability:** IMU orientation estimation without magnetometer or drift.
+
+#### Core Mechanics:
+1. **Virtual Steering Rack Stop Clamp (`xinput_proxy.cpp:979-987`):**
+   - Clamps $|\text{Wrap}(\theta_{\text{pred}} - \theta_{\text{center}})| \le \theta_{\max,\text{rack}} = \text{clamp}(\text{motionMax} + 5^\circ, 35^\circ, 90^\circ)$ to prevent over-travel windup and $\pm 180^\circ$ branch-cut sign flips.
+2. **Gravity Roll Anchor & Recline Protection (`xinput_proxy.cpp:940-945, 989`):**
+   - $\theta_{\text{accel}} = \text{atan2}(-\hat{a}_x, \text{signedGyz}) \times 57.29578^\circ$. Bypassed whenever $|\text{pitch}| > 30^\circ$.
+3. **Asymmetric Gravity-Reinforcing & 3.5s Turntable Immunity (`xinput_proxy.cpp:994-1013`):**
+   - Let $d_z = \max(0.65 \cdot \text{motionDead}, 0.55^\circ)$, $\text{gyroRecentlySteered} \iff (0 \le t - t_{\text{lastGyroTurn}} < 3500\text{ ms})$, and $\text{gravityReinforcing} \iff (\theta_{\text{accel}} \cdot \theta_{\text{pred}} \ge 0) \land (|\theta_{\text{accel}}| \ge |\theta_{\text{pred}}|)$.
+   - **Sustained Corner Hold / Flat Yaw Turn:** When `!gravityReinforcing` and `(inRace || gyroRecentlySteered)` with $|\theta_{\text{pred}} - \theta_{\text{center}}| > d_z$, $\tau = 25.0\text{ s}$ (prevents flat/turntable yaw turns where $\theta_{\text{accel}} \approx 0^\circ$ from yanking the wheel back to center).
+   - **Active Steering:** When `!gravityReinforcing` and $|\omega_{\text{fused}}| > 1.2^\circ/\text{s}$, $\tau = 12.0\text{ s}$.
+   - **Stationary Rest / Reinforcing Tilt:** $\tau = 0.85\text{ s}$ under rumble/vibration, or $\tau = 0.22\text{ s}$ at rest.
+
+---
+
+### 1.13 DirectInput8 (`DINPUT8.dll`) PE IAT Dual-Enumeration Filter (`#xinput-hook-proxy`, `MOD-DINPUT8-HIDHIDE`)
+- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L2101-L2240) (`InstallDirectInputFilter`)
+- **Primary Project:** `vibrant-darwin` (`SimBridge`)
+- **Core Mechanics:** Hooks `DINPUT8.dll!DirectInput8Create` in the host executable's PE Import Address Table (`IAT`) at `DLL_PROCESS_ATTACH` and wraps `IDirectInput8::CreateDevice` (`vtbl[3]`) and `IDirectInput8::EnumDevices` (`vtbl[4]`) to hide duplicate Sony `0x054C` controllers without external kernel drivers.
+
+---
+
+### 1.14 Sub-Linear Deficit Weighted Fair-Queuing (DWFQ), VAD Sidechain & Cryptographic Sponsor ROI (`#wfq-routing`, `#streaming-ops`)
+- **Source Artifacts:** [`dwfq_router.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/dwfq_router.js), [`currency_normalizer.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/currency_normalizer.js), [`mod_cockpit.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/mod_cockpit.js), [`vad_sidechain.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/vad_sidechain.js), [`sponsor_roi.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/sponsor_roi.js)
+- **Primary Project:** `aether-agent` (`BOUNTY-AET-003`)
+- **Core Mechanics:**
+  - Sub-linear bandwidth allocation $W_p \propto (\lambda_p + \epsilon)^\beta$ ($\beta = 0.30$) paired with inverse-logarithmic utility deficit cost $C(m_i) = \max(10.0, 100.0 / (1 + \ln(1 + U(m_i))))$.
+  - 40+ ISO-4217 currency and platform gift normalizer (`amountMicros`, Twitch Bits/Subs, TikTok Coins, Kick Subs, Stripe Cents) with $-14\text{ dB}$ presenter VAD sidechain ducking and `HMAC-SHA256` signed Sponsor Proof-of-Performance HTML/JSON reports.
+
+---
+
+### 1.15 Streaming Takeout Lexer, Zero-Dirty-Logic Sieve & 128-Salt MinHash Seed Instantiator (`#quarantine-sieve`, `#minhash-lsh`)
+- **Source Artifacts:** [`sieve.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/sieve.py), [`instantiator.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/instantiator.py), [`test_takeout_sieve.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/tests/test_takeout_sieve.py)
+- **Primary Project:** `aether-agent` (Track 2)
+- **Core Mechanics:**
+  - Streams Google Takeout (`MyActivity.json`, Keep `.json`, Drive `.md`/`.txt`), reconstructs threads by `/app/c/<id>` or $\Delta t \le 45\text{ min}$, and wraps raw text inside HTML-escaped `<tainted_raw_idea isolation="quarantined">` containers.
+  - Collapses iterative drafts ($\text{Jaccard} \ge 0.70$) via 128-salt `blake2b` MinHash signatures while preserving earliest conception timestamps, SQLite FTS5 indexing, and cross-model seed emission (`gemini_seed.json`, `claude_seed.md`, `codex_agents.md`, `AGENT_BOOTLOADER.md`).
+
+---
+
+### 1.16 Sovereign In-Between Semantic Airlock, Taint Lattice, Phantom Broker & Win32 DualSense HID Bridge (`#nexushelm`, `#semantic-airlock`, `#taint-lattice`)
+- **Source Artifacts:** [`nexushelm/engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py), [`nexushelm/hid_bridge.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/hid_bridge.py), [`nexushelm/tests/test_nexushelm.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py)
+- **Primary Project:** `aether-agent` (`BOUNTY-AET-008`)
+- **Core Mechanics:**
+  - Bidirectional `SemanticAirlock` + `StructuralHeuristicScanner` (homoglyph `NFKD` mapping, Base64/hex decoding, Python AST sink detection, Shannon entropy checks).
+  - Monotonic `TaintLattice` (`0..4`) with HMAC-signed `PinpointPromotionReceipt`, `PhantomTokenBroker` (`phantom://provider/op/<hmac>`), `InstructionIntegrityGuard`, 5-Speed `AutonomyGearbox`, `TradeoffFork`, and live Win32 `ctypes` `DualSenseHidBridge` (`0x21`/`0x26` tactile trigger ratification).
+
+---
+
+### 1.17 Ground-Effect Aerodynamics, Crosswind Crab Kinematics & Dynamic-Pressure Haptics (`#aerodynamics-physics`, `#flight-sim`)
+- **Source Artifacts:** [`crosswind/physics.py`](file:///c:/Users/Zachariah/aether%20agent/crosswind/physics.py), [`crosswind/SPECIFICATION.md`](file:///c:/Users/Zachariah/aether%20agent/crosswind/SPECIFICATION.md), [`crosswind/mission_runner.py`](file:///c:/Users/Zachariah/aether%20agent/crosswind/mission_runner.py)
+- **Primary Project:** `aether-agent` (`BOUNTY-AET-004`)
+- **Core Mechanics:**
+  - Induced drag ground-effect attenuation $\sigma(h/b) = \frac{16(h/b)^2}{1 + 16(h/b)^2}$, lift-slope boost, crosswind crab angle $\beta = \arcsin(v_{\text{cross}}/V_{\text{TAS}})$, touchdown grease scoring, and quadratic DualSense trigger stiffening $F_{\text{trigger}} = 20 + 200(V_{\text{IAS}}/V_{\text{NE}})^2$ (`Mode 0x21`) with $32\text{ Hz}$ pre-stall buffet (`Mode 0x26`).
+
+---
+
+### 1.18 Mobile Hardware-Button & Voice-to-CLI Gateway with Acoustic Safety Airlock (`#mobile-bridge`, `#voice-gateway`, `#safety-airlock`)
+- **Source Artifacts:** [`voice_bridge/airlock.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/airlock.py), [`voice_bridge/server.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/server.py), [`voice_bridge/service.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/service.py)
+- **Primary Project:** `aether-agent` (`BOUNTY-AET-007`)
+- **Core Mechanics:**
+  - FastAPI gateway (`/antigravity/voice`, `/antigravity/cli`) with constant-time token verification (`secrets.compare_digest`), regex command-destruction airlock (`validate_voice_prompt`), and Markdown/LaTeX-stripping vocal synthesizer (`clean_for_tts`).
+`
