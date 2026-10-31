@@ -1,9 +1,10 @@
 import { useState, useMemo } from 'react';
 import { VitalsHeader } from './components/VitalsHeader';
+import { NexusHelmSteeringDeck } from './components/NexusHelmSteeringDeck';
+import { VentureIncubatorPanel } from './components/VentureIncubatorPanel';
 import { BountyLedger } from './components/BountyLedger';
 import { BountyDetailDrawer } from './components/BountyDetailDrawer';
 import { DomainOverlayPanel } from './components/DomainOverlayPanel';
-import { VentureIncubatorPanel } from './components/VentureIncubatorPanel';
 import { ProjectNodesPanel } from './components/ProjectNodesPanel';
 import { INITIAL_BOUNTIES, DOMAIN_TAGS } from './data/hubData';
 import type { Bounty } from './data/hubData';
@@ -62,40 +63,49 @@ export function App() {
         completedCount={completedCount}
       />
 
-      {/* Main 2-Column Operational Grid */}
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left Column: Interactive Central Bounty Ledger (8 of 12 cols = 66%) */}
-        <section className="lg:col-span-8 space-y-6">
-          <BountyLedger
-            bounties={filteredBounties}
-            selectedBounty={selectedBounty}
-            onSelectBounty={(b) => setSelectedBounty(b)}
-            statusFilter={statusFilter}
-            onStatusFilterChange={setStatusFilter}
-            searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
-            activeTag={activeTag}
-            onClearTag={() => setActiveTag(null)}
-          />
-        </section>
+      {/* Main Operational Workspace */}
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 space-y-6">
+        {/* Interactive NexusHelm 5-Speed Autonomy Gearbox & Rule-of-3 Steering Deck */}
+        <NexusHelmSteeringDeck />
 
-        {/* Right Column: Domain Registry, Venture Track & Project Nodes (4 of 12 cols = 33%) */}
-        <aside className="lg:col-span-4 space-y-6">
-          <DomainOverlayPanel
-            tags={DOMAIN_TAGS}
-            selectedTag={activeTag}
-            onSelectTag={setActiveTag}
-          />
+        {/* Complete 6-Track Venture Incubator Telemetry & 4 Public GitHub Repo Showcase */}
+        <VentureIncubatorPanel />
 
-          <VentureIncubatorPanel />
+        {/* 2-Column Bounty Ledger & Domain / Repository Node Registry */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          {/* Left Column: Interactive Central Bounty Ledger (8 of 12 cols = 66%) */}
+          <section className="lg:col-span-8 space-y-6">
+            <BountyLedger
+              bounties={filteredBounties}
+              selectedBounty={selectedBounty}
+              onSelectBounty={(b) => setSelectedBounty(b)}
+              statusFilter={statusFilter}
+              onStatusFilterChange={setStatusFilter}
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
+              activeTag={activeTag}
+              onClearTag={() => setActiveTag(null)}
+            />
+          </section>
 
-          <ProjectNodesPanel />
-        </aside>
+          {/* Right Column: Domain Registry & Public GitHub Nodes (4 of 12 cols = 33%) */}
+          <aside className="lg:col-span-4 space-y-6">
+            <ProjectNodesPanel />
+
+            <DomainOverlayPanel
+              tags={DOMAIN_TAGS}
+              selectedTag={activeTag}
+              onSelectTag={setActiveTag}
+            />
+          </aside>
+        </div>
       </main>
 
       {/* Footer Info */}
       <footer className="border-t border-obsidian-850 bg-obsidian-900/60 py-4 px-6 text-center text-xs font-mono text-slate-400">
-        <p>Antigravity Multi-Agent Central Hub &bull; Local-First Human-AI Collaboration Framework &bull; Port 5173</p>
+        <p>
+          Antigravity Sanctuary Portal &bull; NexusHelm 5-Speed Steering Crucible &bull; 6 Venture Tracks &bull; 4 Public GitHub Repositories
+        </p>
       </footer>
 
       {/* Slide-over Inspection & Action Drawer */}
