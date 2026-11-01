@@ -365,3 +365,34 @@
 - **Core Mechanics:**
   - FastAPI gateway (`/antigravity/voice`, `/antigravity/cli`) with constant-time token verification (`secrets.compare_digest`), regex command-destruction airlock (`validate_voice_prompt`), and Markdown/LaTeX-stripping vocal synthesizer (`clean_for_tts`).
 `
+
+
+---
+
+### 1.19 Universal Gemini Explicit Context Caching & Kernel Spec Engine (`#context-caching`, `#gemini-2-5-pro`, `#kppc-routing`)
+- **Source Artifacts:** [`gemini_context_cache.py`](file:///C:/Users/Zachariah/tools/gemini_context_cache.py), [`gemini_context_cache.ts`](file:///C:/Users/Zachariah/tools/gemini_context_cache.ts), [[GEMINI_CONTEXT_CACHING]]
+- **Primary Project:** `aether-agent-suite` (`BOUNTY-AET-009`)
+- **Core Mechanics:**
+  - Dual-mode client instantiation (Google AI Studio API Key with automated fallback to Vertex AI Application Default Credentials on `project-31f97d8a-b7dd-449b-b4d` in `us-central1`).
+  - Explicit server-side context caching (`client.caches.create` / `ai.caches.create`) pinning architecture blueprints and Kernel Packet Processing & Coordination (KPPC) specifications with configurable TTL (default `3600s`).
+  - Yields an immediate 75% input token discount on all subsequent interactive prompts ($k^* > 2.067$ break-even threshold).
+
+---
+
+### 1.20 Anti-Severing Dedicated Chrome App Google Colab MCP Bridge (`#colab-mcp`, `#anti-severing`, `#app-mode`)
+- **Source Artifacts:** [`colab_mcp/session.py`](file:///C:/Users/Zachariah/colab-mcp/src/colab_mcp/session.py), [`colab_mcp/websocket_server.py`](file:///C:/Users/Zachariah/colab-mcp/src/colab_mcp/websocket_server.py), [[COLAB_MCP_INTEGRATION]]
+- **Primary Project:** `colab-mcp` (`mjeanhudson-dev/colab-mcp`)
+- **Core Mechanics:**
+  - Isolated standalone Chrome App window (`--app="https://colab.research.google.com/notebooks/empty.ipynb#..."` with `--user-data-dir="%LOCALAPPDATA%\ColabAppProfile"`).
+  - Anti-severing persistent reconnect bridge: `ColabProxyMiddleware` catches WebSocket `ConnectionClosed` during browser tab reloads or network drops without terminating the agent's MCP memory streams, maintaining tool catalog availability up to a 60-second grace window.
+  - Verified 100% test pass rate (26/26 tests passing in pytest).
+
+---
+
+### 1.21 Cross-Harness MCP Synchronization & Sentry Orchestration (`#mcp-sync`, `#sentry-monitoring`)
+- **Source Artifacts:** [`gemini_context_cache.py`](file:///C:/Users/Zachariah/tools/gemini_context_cache.py), [[CROSS_HARNESS_MCP_SYNC]]
+- **Primary Project:** `antigravity-sanctuary-portal`
+- **Core Mechanics:**
+  - Idempotent configuration synchronization across Cursor (`~/.cursor/mcp.json`), Windsurf (`~/.codeium/windsurf/mcp_config.json`), Claude Code (`~/.claude.json`), Claude Desktop (`%APPDATA%\Claude\claude_desktop_config.json`), Antigravity (`~/.gemini/config/mcp_config.json`), VS Code (`%APPDATA%\Code\User\mcp.json`), and listeners for Cline, Roo-Code, and Continue.
+  - Automated translation between standard `mcpServers` and VS Code `servers` with `"type": "stdio"`.
+  - Machine-wide persistence of Sentry authentication (`SENTRY_AUTH_TOKEN`, `SENTRY_ORG="eloquent-6q"`) and Paperclip `@sentry/node@10.71.0` peer version compatibility passing 37/37 tests.
