@@ -20,7 +20,7 @@ export const VitalsHeader: React.FC<VitalsHeaderProps> = ({ bountyCount, complet
               Antigravity Multi-Agent Hub
             </h1>
             <p className="text-xs text-slate-400 font-mono mt-0.5">
-              C:\Users\Zachariah\Documents\antigravity
+              ~/Documents/antigravity
             </p>
           </div>
         </div>

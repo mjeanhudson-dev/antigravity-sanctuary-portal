@@ -6,7 +6,7 @@
     Standardizes and initializes a project for the Antigravity Multi-Agent collaboration network:
     1. Generates project-local BOUNTY_BOARD.md, PROJECT_HANDOFF.md, and MULTIAGENT_PROTOCOLS.md.
     2. Wires up bidirectional relative links to central BOUNTY_BOARD.md and GLOBAL_KNOWLEDGE_INDEX.md.
-    3. Registers the project in the Central Directory Registry (c:\Users\Zachariah\Documents\antigravity\BOUNTY_BOARD.md).
+    3. Registers the project in the Central Directory Registry ($HOME\Documents\antigravity\BOUNTY_BOARD.md).
 #>
 
 [CmdletBinding()]
@@ -29,7 +29,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$globalRoot = if ($PSScriptRoot) { $PSScriptRoot } else { "c:\Users\Zachariah\Documents\antigravity" }
+$globalRoot = if ($PSScriptRoot) { $PSScriptRoot } else { "$HOME\Documents\antigravity" }
 if (-not $ProjectPath) {
     $ProjectPath = Join-Path $globalRoot $ProjectName
 }

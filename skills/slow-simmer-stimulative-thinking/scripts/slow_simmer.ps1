@@ -18,7 +18,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$incubatorPath = "C:\Users\Zachariah\Documents\antigravity\VENTURE_INCUBATOR.md"
+$incubatorPath = "$HOME\Documents\antigravity\VENTURE_INCUBATOR.md"
 
 Write-Host "============================================================" -ForegroundColor Cyan
 Write-Host "=== Aether Slow Simmer & Venture Engine ===" -ForegroundColor Cyan

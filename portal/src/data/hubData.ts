@@ -445,7 +445,7 @@ export const VENTURE_TRACKS: VentureTrack[] = [
     telemetryHighlight: '54.1% YT / 23.3% TT / 14.4% Discord / 8.2% Kick Fair-Share Bandwidth',
     githubRepo: 'mjeanhudson-dev/aether-agent-suite',
     githubUrl: 'https://github.com/mjeanhudson-dev/aether-agent-suite',
-    prototypePath: 'C:\\Users\\Zachariah\\aether agent\\omnichorus',
+    prototypePath: '~/aether agent/omnichorus',
     keyComponents: [
       'Sub-Linear Deficit Weighted Fair-Queuing (DWFQ β=0.30)',
       'Universal Multi-Currency & Gift Normalizer (40+ Fiat FX)',
@@ -465,7 +465,7 @@ export const VENTURE_TRACKS: VentureTrack[] = [
     telemetryHighlight: 'O(1) RAM Zip Streamer • 128-Perm MinHash LSH • Dirty-Logic Quarantined',
     githubRepo: 'mjeanhudson-dev/aether-agent-suite',
     githubUrl: 'https://github.com/mjeanhudson-dev/aether-agent-suite',
-    prototypePath: 'C:\\Users\\Zachariah\\aether agent\\takeout_sieve',
+    prototypePath: '~/aether agent/takeout_sieve',
     keyComponents: [
       'Zero-Copy O(1)-RAM Streamer (MyActivity.json, Keep, Drive)',
       'Signal Density Scoring S(d) for Patent & Architecture Primitives',
@@ -485,7 +485,7 @@ export const VENTURE_TRACKS: VentureTrack[] = [
     telemetryHighlight: '250 Hz Overlapped HID • 114/114 PINPOINT Checks • 0B Stock XML Tampered',
     githubRepo: 'mjeanhudson-dev/shift2-dualsense-gyro',
     githubUrl: 'https://github.com/mjeanhudson-dev/shift2-dualsense-gyro',
-    prototypePath: 'C:\\Users\\Zachariah\\Documents\\antigravity\\vibrant-darwin',
+    prototypePath: '~/Documents/antigravity/vibrant-darwin',
     keyComponents: [
       'Direct Win32 SetupAPI 250 Hz Overlapped 64-Byte HID Reader',
       'Rate-Driven Casiez 1€ Adaptive Filter with Branch-Cut Delta',
@@ -505,7 +505,7 @@ export const VENTURE_TRACKS: VentureTrack[] = [
     telemetryHighlight: '3-Model Red-Team Consensus • 100% SHA256 Parity • Atomic Bounty Ledger',
     githubRepo: 'mjeanhudson-dev/antigravity-sanctuary-portal',
     githubUrl: 'https://github.com/mjeanhudson-dev/antigravity-sanctuary-portal',
-    prototypePath: 'C:\\Users\\Zachariah\\Documents\\antigravity\\portal',
+    prototypePath: '~/Documents/antigravity/portal',
     keyComponents: [
       'Atomic Cross-Agent Bounty Ledger & Local Gitea Forge Sync',
       'Tri-Model Adversarial Diff Interrogation (Gemini x Claude x Codex)',
@@ -525,7 +525,7 @@ export const VENTURE_TRACKS: VentureTrack[] = [
     telemetryHighlight: '10/10 Security Tests • Zero Secret Exposure • Rule-of-3 Anti-Fait-Accompli',
     githubRepo: 'mjeanhudson-dev/nexushelm',
     githubUrl: 'https://github.com/mjeanhudson-dev/nexushelm',
-    prototypePath: 'C:\\Users\\Zachariah\\aether agent\\nexushelm',
+    prototypePath: '~/aether agent/nexushelm',
     keyComponents: [
       'Zero-Natural-Language Typed Semantic IPC Airlock',
       'Monotonic Information-Flow Taint Lattice (HUMAN_ROOT → UNTRUSTED)',
@@ -545,7 +545,7 @@ export const VENTURE_TRACKS: VentureTrack[] = [
     telemetryHighlight: '86% Ground-Effect Drag Reduction • 32 Hz AoA Buffet • 10,382 Pt Landing',
     githubRepo: 'mjeanhudson-dev/aether-agent-suite',
     githubUrl: 'https://github.com/mjeanhudson-dev/aether-agent-suite',
-    prototypePath: 'C:\\Users\\Zachariah\\aether agent\\crosswind',
+    prototypePath: '~/aether agent/crosswind',
     keyComponents: [
       'Sectional Blade Element Theory (BET) & Asymmetric Wing Stall',
       'Dynamic Ground Effect Cushion σ(h/b) = 16(h/b)² / (1 + 16(h/b)²)',
@@ -840,7 +840,7 @@ export const DOMAIN_TAGS: DomainTag[] = [
 export const PROJECT_NODES: ProjectNode[] = [
   {
     name: 'shift2-dualsense-gyro (vibrant-darwin)',
-    path: 'C:\\Users\\Zachariah\\Documents\\antigravity\\vibrant-darwin',
+    path: '~/Documents/antigravity/vibrant-darwin',
     domain: 'Track 3 SimBridge: DualSense Gyro Steering & XInput 1.3 Proxy',
     techStack: 'C++17, Win32 SetupAPI, XInput 1.3 Hook',
     status: 'ONLINE',
@@ -852,7 +852,7 @@ export const PROJECT_NODES: ProjectNode[] = [
   },
   {
     name: 'nexushelm',
-    path: 'C:\\Users\\Zachariah\\aether agent\\nexushelm',
+    path: '~/aether agent/nexushelm',
     domain: 'Track 5: Sovereign In-Between Mediator & 5-Speed Steering Harness',
     techStack: 'Python 3, Typed IPC Airlock, Taint Lattice, DualSense 0x21/0x26',
     status: 'ONLINE',
@@ -864,7 +864,7 @@ export const PROJECT_NODES: ProjectNode[] = [
   },
   {
     name: 'antigravity-sanctuary-portal',
-    path: 'C:\\Users\\Zachariah\\Documents\\antigravity\\portal',
+    path: '~/Documents/antigravity/portal',
     domain: 'Track 4 Arbiter Forge: Interactive Crucible & Telemetry Portal',
     techStack: 'React 19, TypeScript 6, Vite 8, Tailwind CSS',
     status: 'SYNCED',
@@ -876,7 +876,7 @@ export const PROJECT_NODES: ProjectNode[] = [
   },
   {
     name: 'aether-agent-suite',
-    path: 'C:\\Users\\Zachariah\\aether agent',
+    path: '~/aether agent',
     domain: 'Tracks 1, 2 & 6: OmniChorus, Takeout Sieve & Crosswind Flight Sim',
     techStack: 'Python 3, TypeScript, DWFQ, MinHash LSH, BET Aero Physics',
     status: 'ONLINE',

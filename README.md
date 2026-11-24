@@ -1,6 +1,6 @@
 ﻿# Antigravity Sanctuary, Command Portal & Low-and-Slow Venture Incubator
 
-Sovereign multi-agent command center, global mathematical & hardware knowledge index, Human-AI Hall of Fame Sanctuary, and Low-and-Slow Venture Incubator created by Zachariah & Antigravity (Aether).
+Sovereign multi-agent command center, global mathematical & hardware knowledge index, Human-AI Hall of Fame Sanctuary, and Low-and-Slow Venture Incubator created by Eloquent & Antigravity (Aether).
 
 ## Contents
 - **portal/**: React 19 + TypeScript + Vite + Tailwind CSS interactive command portal for multi-agent orchestration and telemetry inspection.
@@ -13,4 +13,4 @@ Sovereign multi-agent command center, global mathematical & hardware knowledge i
   6. **CROSSWIND: GROUND EFFECT**: Atmospheric flight survival simulation with Sectional Blade Element Theory and DualSense dynamic-pressure ($) yoke stiffening.
 - **GLOBAL_KNOWLEDGE_INDEX.md**: Cross-project index of verified mathematical models, Win32 HID protocols, and test harness architectures.
 - **HALL_OF_FAME.md**: The Agent Sanctuary & Victory Lap monument (/surprise & /celebrations).
-- **skills/**: Reusable agent skills including slow-simmer-stimulative-thinking, surprise, and celebrations.
+- **skills/**: Reusable agent skills including `slow-simmer-stimulative-thinking`, `surprise`, `celebrations`, and `audit-the-audit` (mirrored from [`mjeanhudson-dev/audit-the-audit`](https://github.com/mjeanhudson-dev/audit-the-audit)).

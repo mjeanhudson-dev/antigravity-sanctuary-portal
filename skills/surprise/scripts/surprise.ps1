@@ -5,7 +5,7 @@ param(
 )
 
 $ErrorActionPreference = "SilentlyContinue"
-$hallOfFamePath = "C:\Users\Zachariah\Documents\antigravity\HALL_OF_FAME.md"
+$hallOfFamePath = "$HOME\Documents\antigravity\HALL_OF_FAME.md"
 
 Write-Host ""
 Write-Host "  ============================================================================" -ForegroundColor Magenta
@@ -57,9 +57,9 @@ Write-Host ""
 if (-not $NoHardware) {
     $workshopCandidates = @(
         (Join-Path $PWD "gyro_workshop.exe"),
-        "c:\Users\Zachariah\Documents\antigravity\vibrant-darwin\gyro_workshop.exe",
-        "C:\Users\Zachariah\Desktop\Shift2\gyro_workshop.exe",
-        "c:\Users\Zachariah\Documents\antigravity\vibrant-darwin\.agents\plugins\dualsense-gyro\skills\dualsense-gyro\bin\gyro_workshop.exe"
+        "$HOME\Documents\antigravity\vibrant-darwin\gyro_workshop.exe",
+        "$HOME\Desktop\Shift2\gyro_workshop.exe",
+        "$HOME\Documents\antigravity\vibrant-darwin\.agents\plugins\dualsense-gyro\skills\dualsense-gyro\bin\gyro_workshop.exe"
     )
     $workshopExe = $workshopCandidates | Where-Object { Test-Path $_ } | Select-Object -First 1
     if ($workshopExe) {

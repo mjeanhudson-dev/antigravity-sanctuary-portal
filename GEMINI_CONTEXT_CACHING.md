@@ -91,7 +91,7 @@ $$k^* > 1 + \frac{C_{\text{storage}}}{C_{\text{base}} - C_{\text{cached}}} = 1 +
 ## 3. Dual-Language Implementation
 
 ### 3.1 Python SDK Implementation (`google-genai`)
-Located at `C:\Users\Zachariah\tools\gemini_context_cache.py`:
+Located at `~/tools/gemini_context_cache.py`:
 
 ```python
 import os
@@ -132,7 +132,7 @@ response = client.models.generate_content(
 ```
 
 ### 3.2 TypeScript / Node.js Implementation (`@google/genai`)
-Located at `C:\Users\Zachariah\tools\gemini_context_cache.ts` (runs natively on Node 24):
+Located at `~/tools/gemini_context_cache.ts` (runs natively on Node 24):
 
 ```typescript
 import { GoogleGenAI } from '@google/genai';

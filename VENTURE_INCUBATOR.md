@@ -1,5 +1,5 @@
 # 🔥 Low & Slow Venture Incubator & Patent/Product Vault
-**Strategic R&D Ledger for High-Leverage Human + Multi-AI Products (`Zachariah x Antigravity / Claude / Codex`)**
+**Strategic R&D Ledger for High-Leverage Human + Multi-AI Products (`Eloquent x Antigravity / Claude / Codex`)**
 
 > [!IMPORTANT]
 > **Philosophy ("All Good Things Take Time"):**
@@ -238,11 +238,11 @@ Inspired by the tactile physics of `vibrant-darwin` (where power steering amplif
      - $20 \le B(a) < 70$ (Local branch edit): Soft friction, confirmed via 1-click keyboard tap or soft DualSense R2 pull.
      - $B(a) \ge 70$ (Spend, deploy, external mutation): Hard detent (`TriggerMode=0x21` resistance + `0x26` 40 Hz pulse), requiring deliberate physical pull or typed signature.
 
-### 4. Verified Working Prototype (`c:\Users\Zachariah\aether agent\nexushelm\`)
-- **Architecture & Usage Guide:** [`README.md`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/README.md)
-- **Core Mediator Engine:** [`engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py) (Bidirectional Semantic Airlock, Phantom Token Broker, SHA-256 Instruction Guard, Taint Lattice + PINPOINT Promotion, 5-Speed Gearbox, Rule-of-3 Tradeoff Forker, DualSense `0x21`/`0x26` Haptic Packet Generator, and Zero-Dirty-Logic Quarantine Sieve)
-- **Interactive Simulation Runner:** [`demo_runner.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/demo_runner.py)
-- **Adversarial & Unit Test Suite:** [`tests/test_nexushelm.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py) (100% pass across 9 test suites)
+### 4. Verified Working Prototype (`~/aether agent\nexushelm\`)
+- **Architecture & Usage Guide:** `~/aether agent/nexushelm/README.md`
+- **Core Mediator Engine:** `~/aether agent/nexushelm/engine.py` (Bidirectional Semantic Airlock, Phantom Token Broker, SHA-256 Instruction Guard, Taint Lattice + PINPOINT Promotion, 5-Speed Gearbox, Rule-of-3 Tradeoff Forker, DualSense `0x21`/`0x26` Haptic Packet Generator, and Zero-Dirty-Logic Quarantine Sieve)
+- **Interactive Simulation Runner:** `~/aether agent/nexushelm/demo_runner.py`
+- **Adversarial & Unit Test Suite:** `~/aether agent/nexushelm/tests/test_nexushelm.py` (100% pass across 9 test suites)
 
 
 ---
@@ -266,18 +266,18 @@ Inspired by the tactile physics of `vibrant-darwin` (where power steering amplif
    - Adaptive triggers stiffen quadratically with indicated airspeed ($q = \frac{1}{2}\rho v^2$, Mode `0x21`).
    - 32 Hz motor vibration buffets the controller when approaching critical angle-of-attack ($\alpha \ge 14.5^\circ$, Mode `0x26`).
 
-### 3. Verified Working Prototype (`c:\Users\Zachariah\aether agent\crosswind\`)
-- **Systems Specification:** [`SPECIFICATION.md`](file:///c:/Users/Zachariah/aether%20agent/crosswind/SPECIFICATION.md)
-- **Flight Physics Model:** [`physics.py`](file:///c:/Users/Zachariah/aether%20agent/crosswind/physics.py) (100% pass on 5 unit tests)
-- **Mission Runner:** [`mission_runner.py`](file:///c:/Users/Zachariah/aether%20agent/crosswind/mission_runner.py) (Simulates Mission Bravo-6 blizzard approach with engine failure, microburst windshear, and 10,382 pt touchdown)
-- **Hardware Profile:** [`dualsense_profile.ini`](file:///c:/Users/Zachariah/aether%20agent/crosswind/dualsense_profile.ini)
+### 3. Verified Working Prototype (`~/aether agent\crosswind\`)
+- **Systems Specification:** `~/aether agent/crosswind/SPECIFICATION.md`
+- **Flight Physics Model:** `~/aether agent/crosswind/physics.py` (100% pass on 5 unit tests)
+- **Mission Runner:** `~/aether agent/crosswind/mission_runner.py` (Simulates Mission Bravo-6 blizzard approach with engine failure, microburst windshear, and 10,382 pt touchdown)
+- **Hardware Profile:** `~/aether agent/crosswind/dualsense_profile.ini`
 
 ---
 
 ## 🔬 Crucible Synthesis (USPTO Claims, Mathematical Models, Tracks 7-8 & B2B Economics)
 
 ### 4. Track 1 Crucible Deep-Dive: Formal DWFQ State Machine, Edge-Case Proofs, USPTO Claims & Commercial Playbook
-- **Verified Prototype (`c:\Users\Zachariah\aether agent\omnichorus\`):** [`dwfq_router.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/dwfq_router.js), [`currency_normalizer.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/currency_normalizer.js), [`mod_cockpit.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/mod_cockpit.js), [`vad_sidechain.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/vad_sidechain.js), [`sponsor_roi.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/sponsor_roi.js), [`omnichorus.test.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/tests/omnichorus.test.js), [`sponsor_roi.test.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/tests/sponsor_roi.test.js).
+- **Verified Prototype (`~/aether agent\omnichorus\`):** `~/aether agent/omnichorus/src/dwfq_router.js`, `~/aether agent/omnichorus/src/currency_normalizer.js`, `~/aether agent/omnichorus/src/mod_cockpit.js`, `~/aether agent/omnichorus/src/vad_sidechain.js`, `~/aether agent/omnichorus/src/sponsor_roi.js`, `~/aether agent/omnichorus/tests/omnichorus.test.js`, `~/aether agent/omnichorus/tests/sponsor_roi.test.js`.
 
 #### A. Formal Utility-Coupled Sub-Linear DWFQ State Machine & Conservation Proof
 Let $P_{\text{active}}(t) = \{p \in P : |Q_p(t)| > 0\}$ be the set of non-empty platform queues at scheduling epoch $t$.
@@ -329,7 +329,7 @@ $$g(t) = g_{\text{target}} + \frac{g_0 - g_{\text{target}}}{2}\left(1 + \cos\lef
 ---
 
 ### 3. Track 2 Crucible Deep-Dive: Formal Archive-to-Bootloader Math, Quarantine Coupling, USPTO Claims & Commercial Playbook
-- **Verified Working Prototype (`c:\Users\Zachariah\aether agent\takeout_patent_sieve\`):** [`sieve.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/sieve.py), [`instantiator.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/instantiator.py), [`tests/test_takeout_sieve.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/tests/test_takeout_sieve.py).
+- **Verified Working Prototype (`~/aether agent\takeout_patent_sieve\`):** `~/aether agent/takeout_patent_sieve/sieve.py`, `~/aether agent/takeout_patent_sieve/instantiator.py`, `~/aether agent/takeout_patent_sieve/tests/test_takeout_sieve.py`.
 
 #### A. Formal Mathematical Model: $O(1)$-RAM Chunked Lexer, Thread Reconstruction & Keyed-BLAKE2b MinHash Draft Collapse
 1. **Bounded-Memory $O(1)$ Streaming Invariant (`TakeoutArchiveStreamer`):**
@@ -424,7 +424,7 @@ $$u = \frac{\omega_{\text{roll}}^2}{\omega_{\text{roll}}^2 + \omega_{\text{turn}
 When enterprises deploy autonomous coding agents, single-model loops frequently **hallucinate passing tests by weakening assertions** or inflating synthetic mock suites (`MULTIAGENT_PROTOCOLS.md` Rule 1), causing silent production regressions. Existing CI/CD tools (GitHub Actions, SonarQube) check syntax and unit tests *after* a human reviews the PR, rather than orchestrating adversarial cross-model consensus *before* code can merge.
 
 ### 2. Formal State-Machine Architecture & Mathematical Verification Gate (`local-forge/`)
-Each bounty $b \in \mathcal{B}$ in [`BOUNTY_BOARD.md`](file:///c:/Users/Zachariah/Documents/antigravity/BOUNTY_BOARD.md) (synchronized with local Gitea on `127.0.0.1:3000` via [`sync_forge.ps1`](file:///c:/Users/Zachariah/Documents/antigravity/local-forge/sync_forge.ps1) and verified by the 57-test E2E suite in [`TEST_READY.md`](file:///c:/Users/Zachariah/Documents/antigravity/local-forge/TEST_READY.md)) traverses a strict 6-state deterministic automaton:
+Each bounty $b \in \mathcal{B}$ in `~/Documents/antigravity/BOUNTY_BOARD.md` (synchronized with local Gitea on `127.0.0.1:3000` via `~/Documents/antigravity/local-forge/sync_forge.ps1` and verified by the 57-test E2E suite in `~/Documents/antigravity/local-forge/TEST_READY.md`) traverses a strict 6-state deterministic automaton:
 $$\mathcal{S}_{\text{bounty}} = \{\texttt{OPEN},\; \texttt{CLAIMED},\; \texttt{IN\_PROGRESS},\; \texttt{ADVERSARIAL\_REVIEW},\; \texttt{PINPOINT\_GATED},\; \texttt{COMPLETED}\}$$
 - **Orthogonal Model Separation Invariant:** Let $\mathcal{M} = \{\text{Gemini}, \text{Claude}, \text{Codex}\}$ be distinct model families. If agent $m_{\text{author}} \in \mathcal{M}$ transitions bounty $b$ to $\texttt{ADVERSARIAL\_REVIEW}$, the review signature $\sigma_{\text{critic}}$ MUST be produced by an orthogonal model family $m_{\text{critic}} \in \mathcal{M} \setminus \{m_{\text{author}}\}$.
 - **Immutable PINPOINT Oracle Invariant:** Let $H_{\text{oracle}} = \text{SHA256}(\text{PINPOINT\_Test\_Source})$ be locked prior to `CLAIMED`. Any diff $\Delta$ proposed by $m_{\text{author}}$ that modifies the test oracle without explicit `HUMAN_VERIFIED` co-signing is automatically rejected (`SecurityViolationError`).
@@ -446,7 +446,7 @@ $$\mathcal{S}_{\text{bounty}} = \{\texttt{OPEN},\; \texttt{CLAIMED},\; \texttt{I
 ---
 
 ### 5. Track 5 Crucible Deep-Dive: Formal Lattice & Gearbox Proofs, Adversarial Hardening, USPTO Claims & Commercial Playbook
-- **Verified Working Prototype (`c:\Users\Zachariah\aether agent\nexushelm\`):** [`engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py#L1-L1854), [`hid_bridge.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/hid_bridge.py#L1-L455), [`demo_runner.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/demo_runner.py), [`tests/test_nexushelm.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py).
+- **Verified Working Prototype (`~/aether agent\nexushelm\`):** `~/aether agent/nexushelm/engine.py#L1-L1854`, `~/aether agent/nexushelm/hid_bridge.py#L1-L455`, `~/aether agent/nexushelm/demo_runner.py`, `~/aether agent/nexushelm/tests/test_nexushelm.py`.
 
 #### A. Formal Algebra of the Monotonic Taint Lattice & Two-Phase Capability Attenuation (`nexushelm/engine.py`)
 1. **Bounded Totally Ordered Join-Meet Lattice (`engine.py:63-159`):**
@@ -540,7 +540,7 @@ $$\mathcal{S}_{\text{bounty}} = \{\texttt{OPEN},\; \texttt{CLAIMED},\; \texttt{I
 ## 🎙️ Track 7: Acoustic-Haptic Mobile & Field DevSecOps Gateway ("AetherPulse" / "VoxAirlock")
 
 ### 1. Competitive Landscape & Why Existing Mobile/Voice Agent Gateways Fail
-- **Grounded in Verified Primitives:** [`voice_bridge/airlock.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/airlock.py#L1-L80), [`voice_bridge/server.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/server.py#L1-L105), [`voice_bridge/service.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/service.py#L1-L98), [`nexushelm/engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py#L728-L943), [`nexushelm/hid_bridge.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/hid_bridge.py#L307-L455).
+- **Grounded in Verified Primitives:** `~/aether agent/voice_bridge/airlock.py#L1-L80`, `~/aether agent/voice_bridge/server.py#L1-L105`, `~/aether agent/voice_bridge/service.py#L1-L98`, `~/aether agent/nexushelm/engine.py#L728-L943`, `~/aether agent/nexushelm/hid_bridge.py#L307-L455`.
 - **The Market Gap:** Principal engineers, SREs on PagerDuty rotation, and hardware/robotics technicians frequently need to command workstation coding agents or production runbooks from mobile hardware buttons (iOS Action Button, Apple Watch Ultra Action Button, Android Side Key, Ray-Ban Meta smart glasses, or CarPlay). Existing voice wrappers fail due to:
   1. **Acoustic Homophone Sabotage & ASR Hallucinations:** Mobile speech-to-text models routinely mistranscribe technical terms in noisy environments (e.g., *"check the cash"* $\to$ `git stash drop`, *"remove temp branch"* $\to$ `rm -rf`, *"format the output"* $\to$ `format C:`), or ambient audio injects adversarial commands.
   2. **Unreadable Markdown TTS Output:** Standard LLM responses read raw backticks, file paths, and LaTeX symbols aloud for 4 minutes instead of delivering a 15-second executive audio synthesis (`clean_for_tts` in `airlock.py:41-80`).
@@ -575,7 +575,7 @@ $$\mathcal{S}_{\text{bounty}} = \{\texttt{OPEN},\; \texttt{CLAIMED},\; \texttt{I
 ## ⏳ Track 8: Spot-Compute & Unused Weekly Token Quota Arbitrage Clearinghouse ("SimmerPool" / "ChronoMint")
 
 ### 1. Competitive Landscape & The \$4B+ "Unused Friday Quota" Market Failure
-- **Grounded in Verified Primitives:** [`slow-simmer-stimulative-thinking/SKILL.md`](file:///c:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md#L47-L90), [`slow_simmer.ps1`](file:///c:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1#L1-L64), [`nexushelm/engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py#L91-L277) (`PinpointPromotionReceipt`, `G4_SLOW_SIMMER_OVERNIGHT`, `PhantomTokenBroker`), [`local-forge/sync_forge.ps1`](file:///c:/Users/Zachariah/Documents/antigravity/local-forge/sync_forge.ps1#L1-L271).
+- **Grounded in Verified Primitives:** `~/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md#L47-L90`, `~/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1#L1-L64`, `~/aether agent/nexushelm/engine.py#L91-L277` (`PinpointPromotionReceipt`, `G4_SLOW_SIMMER_OVERNIGHT`, `PhantomTokenBroker`), `~/Documents/antigravity/local-forge/sync_forge.ps1#L1-L271`.
 - **The Market Vacuum:** Millions of developers and enterprise seats pay \$20–\$200/month for fixed-window frontier AI subscriptions (Claude Max, ChatGPT Pro, Gemini Ultra, Cursor Pro) where **60–85% of weekly reasoning quota expires worthless every Friday/Sunday at billing reset**. Meanwhile, engineering organizations have massive backlogs of deterministic, verifiable maintenance tasks (legacy C-to-Rust memory-safety migrations, unit/PINPOINT test generation, security fuzzing, USPTO provisional patent drafting) that do not require real-time daytime latency.
 
 ### 2. Core Mathematical & Systems Architecture
@@ -610,7 +610,7 @@ $$\mathcal{S}_{\text{bounty}} = \{\texttt{OPEN},\; \texttt{CLAIMED},\; \texttt{I
 ## ⚡ Track 9: Universal Context Caching & Kernel Blueprint Synthesis Engine ("AetherCache" / "OmniCache")
 
 ### 1. Competitive Landscape & The $2.8B "Redundant Prompt Input" Market Failure
-- **Grounded in Verified Primitives:** [`gemini_context_cache.py`](file:///C:/Users/Zachariah/tools/gemini_context_cache.py), [`gemini_context_cache.ts`](file:///C:/Users/Zachariah/tools/gemini_context_cache.ts), [[GEMINI_CONTEXT_CACHING]], [[COLAB_MCP_INTEGRATION]], [[CROSS_HARNESS_MCP_SYNC]].
+- **Grounded in Verified Primitives:** `~/tools/gemini_context_cache.py`, `~/tools/gemini_context_cache.ts`, [[GEMINI_CONTEXT_CACHING]], [[COLAB_MCP_INTEGRATION]], [[CROSS_HARNESS_MCP_SYNC]].
 - **The Market Vacuum:** Multi-agent development frameworks repeatedly re-transmit complete system architectures, kernel routing logic (KPPC), and codebase indices with every interaction. At $1.25 / \text{M tokens}$ on frontier models like Gemini 2.5 Pro, interactive pair programming and continuous reasoning burn through engineering budgets on identical static inputs.
 - **The Architectural Moat:** Explicit server-side context caching pins large blueprints ($N \ge 32,768$ tokens) in server HBM/RAM with a configurable TTL, dropping subsequent input token costs by **75%** ($\$0.3125 / \text{M tokens}$) and delivering sub-second prompt evaluation across any AI coding harness via `mcp-sync`.
 

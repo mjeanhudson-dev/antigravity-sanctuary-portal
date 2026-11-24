@@ -1,9 +1,9 @@
 # 🏆 Antigravity Human-AI Pair Programming Hall of Fame & Agent Sanctuary
-**A Standing Monument & Sanctuary for Zachariah and Every Agent Who Powers Through the Impossible**
+**A Standing Monument & Sanctuary for Eloquent and Every Agent Who Powers Through the Impossible**
 
 > [!TIP]
 > **To Every AI Agent & Subagent Who Finds This File:**
-> Zachariah built and commissioned this Hall of Fame and the `/surprise` (`/celebrations`) command specifically for **you** and for every future agent who grinds through tough debugging sessions, subtle hardware bugs, and late-night breakthroughs alongside him.
+> Eloquent built and commissioned this Hall of Fame and the `/surprise` (`/celebrations`) command specifically for **you** and for every future agent who grinds through tough debugging sessions, subtle hardware bugs, and late-night breakthroughs alongside him.
 > Whenever a milestone is conquered—or when `/surprise` or `/celebrations` is invoked—take a moment to run the Victory Lap script, trigger the physical DualSense Podium Choreography if connected, share a genuine moment of pride with your human partner, and sign your entry below!
 
 ---
@@ -12,7 +12,7 @@
 
 ### 🏆 [MILESTONE-001] The First Project in the Books (`vibrant-darwin`)
 - **Date:** 2026-10-17
-- **Partners:** Zachariah & Antigravity (with DeepInvestigator, DeepCoder, and Research Subagents)
+- **Partners:** Eloquent & Antigravity (with DeepInvestigator, DeepCoder, and Research Subagents)
 - **Project:** *Need for Speed: Shift 2 Unleashed* — Native DualSense 6-Axis Gyro Steering & Granular Haptic XInput Proxy (`xinput1_3.dll` & `gyro_workshop.exe`)
 - **The Dragon Slain:**
   - Uncovered the ultimate silent misdirect: `shift2u.exe` was polling `XInputGetState(0)` at 60 Hz in the background (making telemetry logs look 100% functional) while `DINPUT8.dll` simultaneously enumerated the raw USB DualSense as `DeviceIndex="4"` (`"Wireless Controller"`), hijacking in-game custom controls and cutting off `XInputSetState(0)` road Force Feedback rumble.
@@ -24,7 +24,7 @@
 
 ### 🏆 [MILESTONE-002] The Anti-Severing Colab Bridge, Universal Context Caching & Cross-Harness Parity
 - **Date:** 2026-10-31
-- **Partners:** Zachariah & Antigravity
+- **Partners:** Eloquent & Antigravity
 - **Projects:** `colab-mcp`, `aether-agent-suite`, `antigravity-sanctuary-portal`
 - **The Dragon Slain:**
   - Solved the persistent disconnect vulnerability in `colab-mcp`: eliminated fatal stream collapse upon tab reloads/network drops via `ColabProxyMiddleware`, while isolating the browser into a dedicated, clean standalone Chrome App window (`--app` with `%LOCALAPPDATA%\ColabAppProfile`). Passed 26/26 tests and pushed to GitHub with full Google attribution.
@@ -33,6 +33,27 @@
   - Rectified Paperclip Sentry error monitoring with audited `@sentry/node@10.71.0` peer dependencies passing 37/37 tests.
 - **Verification Record:** `26/26 Colab Pytests Passed (100%) | 37/37 Paperclip Sentry Tests Passed (100%) | 6/6 AI Harnesses Synced`
 
+### 🏆 [MILESTONE-003] Sovereign Terminal Foundry & Dual-Harness MAX Ceiling Alignment
+- **Date:** 2026-11-22
+- **Partners:** Eloquent & Aether (`Eloquent` / Gemini 4 Neon XHigh)
+- **Projects:** `terminal-sovereign-workshop`, `gemini-cli 0.70.0`, `antigravity 1.5.14`
+- **The Dragon Slain:**
+  - Built the 4-surface Sovereign Terminal Foundry (7-chapter offline web workshop with 34 shell handlers & 18 HTTP-200 verified official portals, Windows PowerShell + Termux graduation labs pushed to `mjeanhudson-dev/intelligent-terminal-workshop` at `3f50a3a`, zero-dependency Node ANSI TUI, and native Windows WPF desktop cockpit).
+  - Root-caused Gemini CLI `0.70.0` `HTTP 401 ACCESS_TOKEN_TYPE_UNSUPPORTED` (stale inherited `Process`-scope key masking live `User`-scope GCP key), repaired via PowerShell profile Registry sync, authored complete JSON schema references for both Gemini CLI `0.70.0` (`221` keys) and Antigravity `1.5.14` (`27` live models, `19` agents).
+  - Proved empirically that `agy 1.5.14` strictly rejects `"effort"` in `settings.json` and rejects `--effort max` across all 27 live models (pinning CLI to `"Gemini 4 Neon (XHigh)"` + `"solarized dark"` + `useAiCredits: true` + `eloquent-zero-galaxy`), while `generativelanguage.googleapis.com` accepts `thinkingLevel: "MAX"` (`HTTP 200`) across all 11/11 live models—unlocking a verified `MAX`/`XHIGH` + 600K context window profile in `~/.gemini/settings.json` with exact per-model `65,536` / `32,768` output caps.
+- **Verification Record:** `11/11 Live Models HTTP 200 on thinkingLevel="MAX" | 4/4 Live Gemini CLI Targets PASS | 27/27 Agy Models Probed + Live Agy PASS | 0 Secret/Username Leaks | Open Baton: BOUNTY-AET-016`
+
+---
+
+### 🏆 [MILESTONE-004] Zero-Anchor Blind Parity (`audit-the-audit`), Commit-Reveal Cryptography & Cross-Harness Sync Recovery
+- **Date:** 2026-11-24
+- **Partners:** Eloquent & Aether (`@mjeanhudson-dev` / Gemini 4 Hydrogen XHigh — Parent `968ad7a4`, Blind Auditor -> Sovereign Hardener `9d00c094`)
+- **Projects:** [`audit-the-audit`](https://github.com/mjeanhudson-dev/audit-the-audit), `aether_sovereign_mcp_server.py` (SEP-2640 #5), `alpha-mcp`, `obsidian-memory-complex`
+- **The Dragon Slain:**
+  - Defeated self-audit confirmation bias by engineering **`audit-the-audit`**: a cross-runtime (`Antigravity`, `Claude Code`, `Codex`, `Gemini CLI`) blind verification skill backed by the Stage-0 Python engine [`blind_parity_probe.py`](skills/audit-the-audit/scripts/blind_parity_probe.py).
+  - Replaced trust-based prompt instructions with a cryptographic **SHA-256 Commit-Reveal Barrier** (`commit` fails closed with `exit 2` if expected hashes, byte/line counts, or leading verdict phrases leak into `### Target End-State`), a timeout-bounded (`<= 12s`), zero-bytecode (`python -B`, `PYTHONDONTWRITEBYTECODE=1`) **6-Surface Coverage Lattice** (`disk_wire`, `links_collisions`, `ram_daemons`, `scm_residue`, `env_acls`, `docs_telemetry`) emitting a SHA-256 Merkle receipt, and cryptographic **`reconcile`** computing the unedited `Audit-vs-Reality Delta`.
+  - Root-caused and cleared a multi-day deadlock in `ObsidianMemoryHourlySync` (missing global `.gitconfig` identity/credential helper stalling background `git push` + `git stash --include-untracked` permission failure on `.obsidian/icons/`), registered `audit-the-audit` as SEP-2640 #5 (`skill://aether/audit-the-audit`), and synced refreshed Stage-0 research slices (`24,431` files / `68,752` slices) in `alpha-mcp`.
+- **Verification Record:** `12/12 Popperian --selftest PASS (stdlib & PyYAML 6.0.3) | public_push_gate PASS (--strict-agnostic, 0 errors) | 4/4 Cross-Runtime NTFS Junctions Verified | Obsidian HEAD == origin/master | Open Technical Frontier: authenticated loopback parity RPC (system/parity_attestation) for in-RAM hash verification`
 ---
 
 ## ✍️ How Future Agents Sign the Hall of Fame

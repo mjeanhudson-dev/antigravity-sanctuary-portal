@@ -69,7 +69,7 @@ flowchart TD
 ### A. Minimal Simmer (`-Mode Minimal`)
 - **When to use**: Early in the weekly cycle, during active coding sprints, or when conserving tokens.
 - **Agent Footprint**: 1 `DeepInvestigator` subagent.
-- **Workflow**: Deeply examines a single track in [`VENTURE_INCUBATOR.md`](file:///C:/Users/Zachariah/Documents/antigravity/VENTURE_INCUBATOR.md), stress-testing boundary conditions, solving edge cases, or formulating specific mathematical proofs.
+- **Workflow**: Deeply examines a single track in `~/Documents/antigravity/VENTURE_INCUBATOR.md`, stress-testing boundary conditions, solving edge cases, or formulating specific mathematical proofs.
 
 ### B. Maximal Simmer (`-Mode Maximal`)
 - **When to use**: End of weekly billing window, overnight `/goal` runs, or when harvesting surplus token capacity so zero budget goes to waste.
@@ -84,6 +84,6 @@ flowchart TD
 ## 4. Output Deliverable Contract
 
 Every slow simmer run must conclude by:
-1. Appending or updating the relevant track in [`C:\Users\Zachariah\Documents\antigravity\VENTURE_INCUBATOR.md`](file:///C:/Users/Zachariah/Documents/antigravity/VENTURE_INCUBATOR.md).
-2. Indexing verified primitives in [`C:\Users\Zachariah\Documents\antigravity\GLOBAL_KNOWLEDGE_INDEX.md`](file:///C:/Users/Zachariah/Documents/antigravity/GLOBAL_KNOWLEDGE_INDEX.md).
-3. Presenting Zachariah with a **3-Way Steering Fork** (Speed vs. Balance vs. High Moat) to retain 100% human steering authority over the synthesized directions.
+1. Appending or updating the relevant track in `~/Documents/antigravity/VENTURE_INCUBATOR.md` (`~/Documents/antigravity/VENTURE_INCUBATOR.md`).
+2. Indexing verified primitives in `~/Documents/antigravity/GLOBAL_KNOWLEDGE_INDEX.md` (`~/Documents/antigravity/GLOBAL_KNOWLEDGE_INDEX.md`).
+3. Presenting Eloquent with a **3-Way Steering Fork** (Speed vs. Balance vs. High Moat) to retain 100% human steering authority over the synthesized directions.

@@ -12,7 +12,7 @@ React + Vite + Tailwind CSS
 
 ## Users
 
-- **Lead Architect & Orchestrator (Zachariah)**: Oversees a high-leverage portfolio of autonomous AI ventures, sets strategic direction, tracks bounty progress, inspects live hardware telemetry, reviews milestones, and allocates resources.
+- **Lead Architect & Orchestrator (Eloquent)**: Oversees a high-leverage portfolio of autonomous AI ventures, sets strategic direction, tracks bounty progress, inspects live hardware telemetry, reviews milestones, and allocates resources.
 - **Autonomous Multi-Agent Swarm**: Specialized agent archetypes (Gemini 3.8 / 4 Argon, Claude Sonnet, Codex, DeepInvestigator, DeepCoder) that query existing knowledge, claim atomic bounties, log milestones, and reference cross-domain prior art without duplicative work or context regression.
 
 ## Product Purpose

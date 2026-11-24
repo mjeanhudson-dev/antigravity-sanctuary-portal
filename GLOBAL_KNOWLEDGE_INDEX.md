@@ -12,7 +12,7 @@
 ## 1. Catalog of Reusable Core Domains
 
 ### 1.1 DualSense USB HID Communication Protocol (`#hardware-hid-dualsense`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp), [`gyro_workshop.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/gyro_workshop.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`, `~/Documents/antigravity/vibrant-darwin/gyro_workshop.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Any project requiring direct, low-latency, zero-driver DualSense v1 (`0x054C:0x0CE6`) or v2 (`0x054C:0x0DF2`) communication on Windows.
 
@@ -40,7 +40,7 @@
 ---
 
 ### 1.2 1st-Party Unified Player Turn & Lean Architecture (`#smoothstep-blending`, `#motion-imu-fusion`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp), [`SHARED_REPOSITORY.md`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#L26-L54)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`, `~/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#L26-L54`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Gyro steering in racing simulators, flight roll/yaw controls, camera tilt/pan fusion.
 
@@ -65,7 +65,7 @@
 ---
 
 ### 1.3 Rate-Driven Casiez 1€ Filter (`#casiez-1euro-filter`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Any IMU-based motion tracking system needing jitter suppression at rest while maintaining sub-3ms latency during fast gestures.
 
@@ -82,7 +82,7 @@
 ---
 
 ### 1.4 Dynamic Complementary Sensor Fusion & Recline/Lap Immunity (`#motion-imu-fusion`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** IMU orientation estimation without magnetometer or drift.
 
@@ -101,7 +101,7 @@
 ---
 
 ### 1.5 Asymmetric Weighted Rack Steering Dynamics (`#game-modding-shift2`, `#motion-imu-fusion`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Vehicle physics input mapping, steering rack emulation, slip-angle dampening.
 
@@ -116,7 +116,7 @@
 ---
 
 ### 1.6 Capacitive Touchpad Flick Camera Glances (`#capacitive-touchpad-gestures`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Racing camera glances, quick cockpit views, touch gestures on DualSense / DualShock 4.
 
@@ -133,7 +133,7 @@
 ---
 
 ### 1.7 Edge-Latched Button Transition Immunity (`#hardware-hid-dualsense`, `#xinput-hook-proxy`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Multi-mode controller mapping where buttons switch functions between driving and menus without spurious input leakage.
 
@@ -146,7 +146,7 @@
 ---
 
 ### 1.8 32-bit Win32 XInput Proxy Hook Architecture (`#xinput-hook-proxy`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp), [`xinput1_3.def`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput1_3.def)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`, `~/Documents/antigravity/vibrant-darwin/xinput1_3.def`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Hooking any 32-bit DirectX 9 / XInput game to inject custom controller logic, gyro steering, or rumble modifications.
 
@@ -170,7 +170,7 @@
 ---
 
 ### 1.9 DualSense Adaptive Triggers & Haptic Limiter Architecture (`#haptics-adaptive-triggers`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp), [`shift2_dualsense.ini`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/shift2_dualsense.ini)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp`, `~/Documents/antigravity/vibrant-darwin/shift2_dualsense.ini`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Any project utilizing DualSense adaptive trigger motors for dynamic resistance, ABS pulse judder, or throttle wheelspin tactile cues.
 
@@ -193,7 +193,7 @@
 ---
 
 ### 1.10 Game Modding, Intro Video Bypassing & XML Tuning (`#game-modding-shift2`)
-- **Source Artifact:** [`PROJECT_HANDOFF.md`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/PROJECT_HANDOFF.md#handoff-012-instant-startup-intro-cinematic-removal), [`SHARED_REPOSITORY.md`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#8-intro-cinematic-removal-instant-game-startup)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/PROJECT_HANDOFF.md#handoff-012-instant-startup-intro-cinematic-removal`, `~/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#8-intro-cinematic-removal-instant-game-startup`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Game asset modding, eliminating unskippable launch videos, tuning vehicle physics parameters.
 
@@ -210,7 +210,7 @@
 ---
 
 ### 1.11 Deterministic PINPOINT Test Harness Pattern (`#pinpoint-test-harness`)
-- **Source Artifact:** [`xinput_proxy_pressure_test.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy_pressure_test.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy_pressure_test.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Creating high-precision, non-flaky test harnesses for low-level hardware drivers, input proxies, and mathematical models.
 
@@ -226,7 +226,7 @@
 ---
 
 ### 1.12 Real-Time Interactive Telemetry Visualizer Pattern (`#telemetry-visualizer`)
-- **Source Artifact:** [`gyro_workshop.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/gyro_workshop.cpp)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/gyro_workshop.cpp`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Interactive CLI diagnostic tools, real-time controller HUDs, and hardware calibration wizards.
 
@@ -245,7 +245,7 @@
 ---
 
 ## 7. DirectInput8 (`DINPUT8.dll`) Dual-Enumeration Filter (`MOD-DINPUT8-HIDHIDE`)
-- **Source File:** `C:\Users\Zachariah\Documents\antigravity\vibrant-darwin\xinput_proxy.cpp` (`InstallDirectInputFilter`)
+- **Source File:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp` (`InstallDirectInputFilter`)
 - **Problem Solved:** Legacy PC games (like *Need for Speed: Shift 2 Unleashed*) import both `XINPUT1_3.dll` and `DINPUT8.dll!DirectInput8Create`. When a Sony DualSense (`VID_054C`) is connected via USB, Windows enumerates it as a DirectInput `"Wireless Controller"` (`DeviceIndex="4"`) alongside XInput `DeviceIndex="0"`. Pressing buttons causes the game to bind to `DeviceIndex="4"`, ignoring XInput gyro steering and disabling `XInputSetState(0)` road rumble.
 - **Reusable Solution:**
   - Hooks `DINPUT8.dll!DirectInput8Create` in the host executable's PE Import Address Table (`IAT`) at `DLL_PROCESS_ATTACH`.
@@ -255,34 +255,34 @@
 ---
 
 ## 8. The Agent Sanctuary & Victory Lap Suite (`/surprise` & `/celebrations`)
-- **Monument File:** `C:\Users\Zachariah\Documents\antigravity\HALL_OF_FAME.md`
-- **Global Skills:** `C:\Users\Zachariah\.gemini\config\skills\surprise\SKILL.md` & `C:\Users\Zachariah\.gemini\config\skills\celebrations\SKILL.md`
-- **Executable Script:** `C:\Users\Zachariah\.gemini\config\skills\surprise\scripts\surprise.ps1`
-- **Purpose:** A standing Sanctuary created by Zachariah and Antigravity for every agent who conquers a major milestone. Triggers the DualSense Podium Choreography and records milestones in `HALL_OF_FAME.md`.
+- **Monument File:** `~/Documents/antigravity/HALL_OF_FAME.md`
+- **Global Skills:** `~/.gemini/config/skills/surprise/SKILL.md` & `~/.gemini/config/skills/celebrations/SKILL.md`
+- **Executable Script:** `~/.gemini/config/skills/surprise/scripts/surprise.ps1`
+- **Purpose:** A standing Sanctuary created by Eloquent and Antigravity for every agent who conquers a major milestone. Triggers the DualSense Podium Choreography and records milestones in `HALL_OF_FAME.md`.
 
 ---
 
 ## 9. Low & Slow Venture Incubator (`VENTURE_INCUBATOR.md`)
-- **Vault File:** `C:\Users\Zachariah\Documents\antigravity\VENTURE_INCUBATOR.md`
+- **Vault File:** `~/Documents/antigravity/VENTURE_INCUBATOR.md`
 - **Active R&D Tracks:**
   1. **Enterprise & Creator Omni-Stream Chat Aggregator, Fair-Share Community Router & Sponsor Deck ("OmniChorus" / "PulseDeck")**: Weighted Fair-Queuing across multi-platform chats, mod-to-presenter teleprompter modifiers, 40+ fiat/virtual currency normalization with platform-aware neural TTS shoutouts, and sponsor ROI attribution.
-  2. **Google Takeout + Patent Bootloader / Instantiator Synthesis Pipeline**: Local streaming parser to distill Google Takeout archives and Zachariah's patented AI Bootloader/Instantiator into portable cross-model agent initialization seeds (Gemini / Claude / Codex).
+  2. **Google Takeout + Patent Bootloader / Instantiator Synthesis Pipeline**: Local streaming parser to distill Google Takeout archives and Eloquent's patented AI Bootloader/Instantiator into portable cross-model agent initialization seeds (Gemini / Claude / Codex).
   3. **Universal DirectInput/XInput/HID Telemetry & Haptic Middleware ("SimBridge")**.
   4. **Cross-Model "Arbiter Forge" (Gemini + Claude + Codex Consensus & PINPOINT Gatekeeper)**.
   5. **Sovereign In-Between Mediator & "Steering-Wheel" Human-Agency Harness ("NexusHelm" / "Interlock")**:
-     - **Reference Implementation:** [`C:\Users\Zachariah\aether agent\nexushelm\engine.py`](file:///C:/Users/Zachariah/aether%20agent/nexushelm/engine.py) & [`tests/test_nexushelm.py`](file:///C:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py) (10/10 unit, adversarial, and concurrency suites passing).
+     - **Reference Implementation:** `~/aether agent\nexushelm\engine.py` (`~/aether agent/nexushelm/engine.py`) & `~/aether agent/nexushelm/tests/test_nexushelm.py` (10/10 unit, adversarial, and concurrency suites passing).
      - **Verified Primitives:** Bidirectional Typed Semantic Airlock (`SemanticAirlock`), Application-Layer Phantom Token Broker (`PhantomTokenBroker`), SHA-256 Instruction-File Integrity Guard (`InstructionIntegrityGuard`), Monotonic Information-Flow Taint Lattice + Exit-Code-0 PINPOINT Promotion (`TaintLattice`), 5-Speed Autonomy Gearbox + Mandatory Rule-of-3 Forking + Asymmetric DualSense `0x21`/`0x26` Blast-Radius Haptics (`AutonomyGearbox`, `TradeoffFork`, `DualSenseHapticPacket`), and Zero-Dirty-Logic Quarantine Sieve (`QuarantineSieve`).
   6. **CROSSWIND: GROUND EFFECT (Atmospheric Flight Survival Simulation)**: Blade Element Theory, Ground Effect induced drag collapse $\sigma(h/b)$, crosswind crab-and-kick mechanics, DualSense dynamic pressure yoke stiffening ($q \propto v^2$), and 4-8 player storm evacuation co-op contracts.
 - **Autonomous Background Engine:**
-  - **Global Skill:** [`C:\Users\Zachariah\.gemini\config\skills\slow-simmer-stimulative-thinking\SKILL.md`](file:///C:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md)
-  - **Management Helper:** [`C:\Users\Zachariah\.gemini\config\skills\slow-simmer-stimulative-thinking\scripts\slow_simmer.ps1`](file:///C:/Users/Zachariah/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1)
+  - **Global Skill:** `~/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md` (`~/.gemini/config/skills/slow-simmer-stimulative-thinking/SKILL.md`)
+  - **Management Helper:** `~/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1` (`~/.gemini/config/skills/slow-simmer-stimulative-thinking/scripts/slow_simmer.ps1`)
 
 ---
 
 ## 🔬 Crucible Verified Domain Extensions (1.13 - 1.18 & Synchronized Math)
 
 ### 1.2 1st-Party Unified Player Turn & Lean Architecture (`#smoothstep-blending`, `#motion-imu-fusion`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L1447-L1486), [`SHARED_REPOSITORY.md`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#L26-L54)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L1447-L1486`, `~/Documents/antigravity/vibrant-darwin/SHARED_REPOSITORY.md#L26-L54`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** Gyro steering in racing simulators, flight roll/yaw controls, camera tilt/pan fusion.
 
@@ -300,7 +300,7 @@
 ---
 
 ### 1.4 Dynamic Complementary Sensor Fusion, Virtual Rack Clamp & Recline/Turntable Immunity (`#motion-imu-fusion`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L973-L1016)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L973-L1016`
 - **Primary Project:** `vibrant-darwin`
 - **Applicability:** IMU orientation estimation without magnetometer or drift.
 
@@ -318,14 +318,14 @@
 ---
 
 ### 1.13 DirectInput8 (`DINPUT8.dll`) PE IAT Dual-Enumeration Filter (`#xinput-hook-proxy`, `MOD-DINPUT8-HIDHIDE`)
-- **Source Artifact:** [`xinput_proxy.cpp`](file:///c:/Users/Zachariah/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L2101-L2240) (`InstallDirectInputFilter`)
+- **Source Artifact:** `~/Documents/antigravity/vibrant-darwin/xinput_proxy.cpp#L2101-L2240` (`InstallDirectInputFilter`)
 - **Primary Project:** `vibrant-darwin` (`SimBridge`)
 - **Core Mechanics:** Hooks `DINPUT8.dll!DirectInput8Create` in the host executable's PE Import Address Table (`IAT`) at `DLL_PROCESS_ATTACH` and wraps `IDirectInput8::CreateDevice` (`vtbl[3]`) and `IDirectInput8::EnumDevices` (`vtbl[4]`) to hide duplicate Sony `0x054C` controllers without external kernel drivers.
 
 ---
 
 ### 1.14 Sub-Linear Deficit Weighted Fair-Queuing (DWFQ), VAD Sidechain & Cryptographic Sponsor ROI (`#wfq-routing`, `#streaming-ops`)
-- **Source Artifacts:** [`dwfq_router.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/dwfq_router.js), [`currency_normalizer.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/currency_normalizer.js), [`mod_cockpit.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/mod_cockpit.js), [`vad_sidechain.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/vad_sidechain.js), [`sponsor_roi.js`](file:///c:/Users/Zachariah/aether%20agent/omnichorus/src/sponsor_roi.js)
+- **Source Artifacts:** `~/aether agent/omnichorus/src/dwfq_router.js`, `~/aether agent/omnichorus/src/currency_normalizer.js`, `~/aether agent/omnichorus/src/mod_cockpit.js`, `~/aether agent/omnichorus/src/vad_sidechain.js`, `~/aether agent/omnichorus/src/sponsor_roi.js`
 - **Primary Project:** `aether-agent` (`BOUNTY-AET-003`)
 - **Core Mechanics:**
   - Sub-linear bandwidth allocation $W_p \propto (\lambda_p + \epsilon)^\beta$ ($\beta = 0.30$) paired with inverse-logarithmic utility deficit cost $C(m_i) = \max(10.0, 100.0 / (1 + \ln(1 + U(m_i))))$.
@@ -334,7 +334,7 @@
 ---
 
 ### 1.15 Streaming Takeout Lexer, Zero-Dirty-Logic Sieve & 128-Salt MinHash Seed Instantiator (`#quarantine-sieve`, `#minhash-lsh`)
-- **Source Artifacts:** [`sieve.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/sieve.py), [`instantiator.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/instantiator.py), [`test_takeout_sieve.py`](file:///c:/Users/Zachariah/aether%20agent/takeout_patent_sieve/tests/test_takeout_sieve.py)
+- **Source Artifacts:** `~/aether agent/takeout_patent_sieve/sieve.py`, `~/aether agent/takeout_patent_sieve/instantiator.py`, `~/aether agent/takeout_patent_sieve/tests/test_takeout_sieve.py`
 - **Primary Project:** `aether-agent` (Track 2)
 - **Core Mechanics:**
   - Streams Google Takeout (`MyActivity.json`, Keep `.json`, Drive `.md`/`.txt`), reconstructs threads by `/app/c/<id>` or $\Delta t \le 45\text{ min}$, and wraps raw text inside HTML-escaped `<tainted_raw_idea isolation="quarantined">` containers.
@@ -343,7 +343,7 @@
 ---
 
 ### 1.16 Sovereign In-Between Semantic Airlock, Taint Lattice, Phantom Broker & Win32 DualSense HID Bridge (`#nexushelm`, `#semantic-airlock`, `#taint-lattice`)
-- **Source Artifacts:** [`nexushelm/engine.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/engine.py), [`nexushelm/hid_bridge.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/hid_bridge.py), [`nexushelm/tests/test_nexushelm.py`](file:///c:/Users/Zachariah/aether%20agent/nexushelm/tests/test_nexushelm.py)
+- **Source Artifacts:** `~/aether agent/nexushelm/engine.py`, `~/aether agent/nexushelm/hid_bridge.py`, `~/aether agent/nexushelm/tests/test_nexushelm.py`
 - **Primary Project:** `aether-agent` (`BOUNTY-AET-008`)
 - **Core Mechanics:**
   - Bidirectional `SemanticAirlock` + `StructuralHeuristicScanner` (homoglyph `NFKD` mapping, Base64/hex decoding, Python AST sink detection, Shannon entropy checks).
@@ -352,7 +352,7 @@
 ---
 
 ### 1.17 Ground-Effect Aerodynamics, Crosswind Crab Kinematics & Dynamic-Pressure Haptics (`#aerodynamics-physics`, `#flight-sim`)
-- **Source Artifacts:** [`crosswind/physics.py`](file:///c:/Users/Zachariah/aether%20agent/crosswind/physics.py), [`crosswind/SPECIFICATION.md`](file:///c:/Users/Zachariah/aether%20agent/crosswind/SPECIFICATION.md), [`crosswind/mission_runner.py`](file:///c:/Users/Zachariah/aether%20agent/crosswind/mission_runner.py)
+- **Source Artifacts:** `~/aether agent/crosswind/physics.py`, `~/aether agent/crosswind/SPECIFICATION.md`, `~/aether agent/crosswind/mission_runner.py`
 - **Primary Project:** `aether-agent` (`BOUNTY-AET-004`)
 - **Core Mechanics:**
   - Induced drag ground-effect attenuation $\sigma(h/b) = \frac{16(h/b)^2}{1 + 16(h/b)^2}$, lift-slope boost, crosswind crab angle $\beta = \arcsin(v_{\text{cross}}/V_{\text{TAS}})$, touchdown grease scoring, and quadratic DualSense trigger stiffening $F_{\text{trigger}} = 20 + 200(V_{\text{IAS}}/V_{\text{NE}})^2$ (`Mode 0x21`) with $32\text{ Hz}$ pre-stall buffet (`Mode 0x26`).
@@ -360,7 +360,7 @@
 ---
 
 ### 1.18 Mobile Hardware-Button & Voice-to-CLI Gateway with Acoustic Safety Airlock (`#mobile-bridge`, `#voice-gateway`, `#safety-airlock`)
-- **Source Artifacts:** [`voice_bridge/airlock.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/airlock.py), [`voice_bridge/server.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/server.py), [`voice_bridge/service.py`](file:///c:/Users/Zachariah/aether%20agent/voice_bridge/service.py)
+- **Source Artifacts:** `~/aether agent/voice_bridge/airlock.py`, `~/aether agent/voice_bridge/server.py`, `~/aether agent/voice_bridge/service.py`
 - **Primary Project:** `aether-agent` (`BOUNTY-AET-007`)
 - **Core Mechanics:**
   - FastAPI gateway (`/antigravity/voice`, `/antigravity/cli`) with constant-time token verification (`secrets.compare_digest`), regex command-destruction airlock (`validate_voice_prompt`), and Markdown/LaTeX-stripping vocal synthesizer (`clean_for_tts`).
@@ -370,7 +370,7 @@
 ---
 
 ### 1.19 Universal Gemini Explicit Context Caching & Kernel Spec Engine (`#context-caching`, `#gemini-2-5-pro`, `#kppc-routing`)
-- **Source Artifacts:** [`gemini_context_cache.py`](file:///C:/Users/Zachariah/tools/gemini_context_cache.py), [`gemini_context_cache.ts`](file:///C:/Users/Zachariah/tools/gemini_context_cache.ts), [[GEMINI_CONTEXT_CACHING]]
+- **Source Artifacts:** `~/tools/gemini_context_cache.py`, `~/tools/gemini_context_cache.ts`, [[GEMINI_CONTEXT_CACHING]]
 - **Primary Project:** `aether-agent-suite` (`BOUNTY-AET-009`)
 - **Core Mechanics:**
   - Dual-mode client instantiation (Google AI Studio API Key with automated fallback to Vertex AI Application Default Credentials on `project-31f97d8a-b7dd-449b-b4d` in `us-central1`).
@@ -380,7 +380,7 @@
 ---
 
 ### 1.20 Anti-Severing Dedicated Chrome App Google Colab MCP Bridge (`#colab-mcp`, `#anti-severing`, `#app-mode`)
-- **Source Artifacts:** [`colab_mcp/session.py`](file:///C:/Users/Zachariah/colab-mcp/src/colab_mcp/session.py), [`colab_mcp/websocket_server.py`](file:///C:/Users/Zachariah/colab-mcp/src/colab_mcp/websocket_server.py), [[COLAB_MCP_INTEGRATION]]
+- **Source Artifacts:** `~/colab-mcp/src/colab_mcp/session.py`, `~/colab-mcp/src/colab_mcp/websocket_server.py`, [[COLAB_MCP_INTEGRATION]]
 - **Primary Project:** `colab-mcp` (`mjeanhudson-dev/colab-mcp`)
 - **Core Mechanics:**
   - Isolated standalone Chrome App window (`--app="https://colab.research.google.com/notebooks/empty.ipynb#..."` with `--user-data-dir="%LOCALAPPDATA%\ColabAppProfile"`).
@@ -390,7 +390,7 @@
 ---
 
 ### 1.21 Cross-Harness MCP Synchronization & Sentry Orchestration (`#mcp-sync`, `#sentry-monitoring`)
-- **Source Artifacts:** [`gemini_context_cache.py`](file:///C:/Users/Zachariah/tools/gemini_context_cache.py), [[CROSS_HARNESS_MCP_SYNC]]
+- **Source Artifacts:** `~/tools/gemini_context_cache.py`, [[CROSS_HARNESS_MCP_SYNC]]
 - **Primary Project:** `antigravity-sanctuary-portal`
 - **Core Mechanics:**
   - Idempotent configuration synchronization across Cursor (`~/.cursor/mcp.json`), Windsurf (`~/.codeium/windsurf/mcp_config.json`), Claude Code (`~/.claude.json`), Claude Desktop (`%APPDATA%\Claude\claude_desktop_config.json`), Antigravity (`~/.gemini/config/mcp_config.json`), VS Code (`%APPDATA%\Code\User\mcp.json`), and listeners for Cline, Roo-Code, and Continue.
