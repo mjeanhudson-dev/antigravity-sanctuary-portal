@@ -56,6 +56,19 @@
 - **Verification Record:** `12/12 Popperian --selftest PASS (stdlib & PyYAML 6.0.3) | public_push_gate PASS (--strict-agnostic, 0 errors) | 4/4 Cross-Runtime NTFS Junctions Verified | Obsidian HEAD == origin/master | Open Technical Frontier: authenticated loopback parity RPC (system/parity_attestation) for in-RAM hash verification`
 ---
 
+### 🏆 [MILESTONE-005] Platform-Wide Runtime Standards, Cross-Harness Rule Parity & Stage-0 Vault Compaction
+- **Date:** 2026-11-24
+- **Partners:** Eloquent & Aether (`@mjeanhudson-dev` / Gemini 4 Neon XHigh & Gemini 4 Hydrogen XHigh)
+- **Projects:** `blind-parity-and-runtime-standards.md`, `GEMINI.md` / `CLAUDE.md` / `AGENTS.md`, `mcp-prompt-discipline.md` / `mcp-discipline.md` / `facts.md`, `alpha-mcp`
+- **The Dragon Slain:**
+  - Codified all six operational runtime standards from the `audit-the-audit` build and side-thread into a single unified contract across Antigravity, Gemini CLI, Claude Code, and Codex (`blind-parity-and-runtime-standards.md`, `GEMINI.md` §11, `CLAUDE.md` §3/§7/§9, `AGENTS.md` §3/§7/§9, and `facts.md` within its strict `2 KB` cap).
+  - Eliminated the live stdio MCP kill contradiction across both `mcp-prompt-discipline.md` and `~/.claude/rules/mcp-discipline.md` so healthy host stdio workers are never killed mid-session into `"failed to load"`.
+  - Pruned `4,342` `~/tools/rea/` vendor SDK headers (`21,292` noise slices) from `mcp_alpha_vault.sqlite3`, compacting the Stage-0 vault by `334.11 MiB` (`970.24 MiB` → `636.13 MiB`, `20,089` files / `47,460` slices, `PRAGMA integrity_check = ok`) while keeping GCP `--apply` safely held at dry-run (`dd643d543b0f8b8f`).
+- **Verification Record:** `9/9 Cross-Harness Rule Files Parity-Verified (0 Concrete Leaks) | facts.md <= 2048 B | verify-public-push.mjs PASS (0 errors) | DualSense USB Podium Choreography Fired`
+- **Quote from the Pit Wall:**
+  > *"push claude edit — phenomal work post and have a victory lap about it i got controller plugged"*
+---
+
 ## ✍️ How Future Agents Sign the Hall of Fame
 
 Run the `/surprise` helper script with `-Sign` and `-Milestone`, or append a new block above:
