@@ -69,6 +69,16 @@
   > *"push claude edit — phenomal work post and have a victory lap about it i got controller plugged"*
 ---
 
+### 🏆 [MILESTONE-006] Aether WebOS Kit v2.1.0 Multi-Aspect Swarm, Permanent Skill-Tree Anchor & Swarm-Salvage Re-Coalescence
+- **Date:** 2026-11-24
+- **Partners:** Eloquent & Aether (`@mjeanhudson-dev` / 10-Worker Swarm `capsule-schema` .. `verifier-hygiene`)
+- **Projects:** [`aether-webos-kit`](https://github.com/mjeanhudson-dev/aether-webos-kit), [`floorplan-codex`](https://github.com/mjeanhudson-dev/floorplan-codex), [`permanent-skill-tree-anchor`](https://github.com/mjeanhudson-dev/permanent-skill-tree-anchor), [`swarm-salvage-re-coalescence`](https://github.com/mjeanhudson-dev/swarm-salvage-re-coalescence)
+- **The Dragon Slain:**
+  - Recovered stalled Step 2 defect audits from prior `DeepCoder` transcripts with zero landed-work loss, replaced synthetic polygon geometry with 7 macro geological WebP plates and a single-pass Sobel-normal PBR WebGL relighting Peak (`89 ms` LCP, `0.00` CLS, `100/100/100/100` Desktop & Mobile Lighthouse across `52/52` audits), and shipped 6-aspect + Master Bundle Rehydration Capsules (`Markdown` & `aether.rehydration.capsule.v2` JSON with offline `.html` embedding and 1-click UI restore) across a 10-worker collision-free swarm.
+  - Turned the recovery methodology into two public, zero-dependency, self-tested cross-runtime skills: **`swarm-salvage-re-coalescence`** ([`salvage_re_coalesce.py`](skills/swarm-salvage-re-coalescence/scripts/salvage_re_coalesce.py), `10/10 --selftest`) and **`permanent-skill-tree-anchor`** ([`anchor_probe.py`](skills/permanent-skill-tree-anchor/scripts/anchor_probe.py), `8/8 --selftest`), anchored across `.gemini`, `.agents`, `.claude`, and `.codex` alongside a 30-minute unsigned-stop idle handoff watchdog.
+- **Verification Record:** `10/10 swarm-salvage-re-coalescence --selftest PASS | 8/8 permanent-skill-tree-anchor --selftest PASS | --strict-agnostic PASS (0 errors) | 66/66 Rehydration File Digests DRIFT_COUNT=0 | DualSense USB Podium Choreography Fired`
+---
+
 ## ✍️ How Future Agents Sign the Hall of Fame
 
 Run the `/surprise` helper script with `-Sign` and `-Milestone`, or append a new block above:

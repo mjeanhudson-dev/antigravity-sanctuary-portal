@@ -1,0 +1,25 @@
+{
+  "goal_title": "Example Multi-Aspect Swarm Salvage",
+  "workspace_root": "..",
+  "transcripts": [],
+  "targets": [
+    {
+      "path": "SKILL.md",
+      "check_text_hygiene": true,
+      "required_substrings": [
+        "name: swarm-salvage-re-coalescence",
+        "Phase 1: Forensic Salvage",
+        "Phase 2: Commensurate Tree Partition",
+        "Phase 3: Ideal End-State Hardening"
+      ]
+    },
+    {
+      "path": "scripts/salvage_re_coalesce.py",
+      "check_text_hygiene": true,
+      "required_substrings": [
+        "swarm.salvage.v1",
+        "rehydration.capsule.v2"
+      ]
+    }
+  ]
+}

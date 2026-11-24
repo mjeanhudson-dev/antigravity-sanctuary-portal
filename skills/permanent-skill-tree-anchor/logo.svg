@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Permanent Skill-Tree Anchor">
+  <title>Permanent Skill-Tree Anchor</title>
+  <defs>
+    <linearGradient id="an-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C1917"/>
+      <stop offset="100%" stop-color="#0C0A09"/>
+    </linearGradient>
+    <linearGradient id="an-gold" gradientUnits="userSpaceOnUse" x1="100" y1="88" x2="412" y2="424">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect x="44" y="44" width="424" height="424" rx="108" fill="url(#an-bg)" stroke="url(#an-gold)" stroke-width="18"/>
+  <!-- Golden anchor ring + crossbar + shank + curved arms + flukes -->
+  <circle cx="256" cy="128" r="34" fill="none" stroke="url(#an-gold)" stroke-width="24"/>
+  <rect x="156" y="190" width="200" height="28" rx="14" fill="url(#an-gold)"/>
+  <rect x="241" y="158" width="30" height="244" rx="15" fill="url(#an-gold)"/>
+  <path d="M124 294 C132 368 188 408 256 408 C324 408 380 368 388 294" fill="none" stroke="url(#an-gold)" stroke-width="30" stroke-linecap="round"/>
+  <polygon points="104,316 128,256 164,302" fill="#FEF08A"/>
+  <polygon points="408,316 384,256 348,302" fill="#FEF08A"/>
+  <!-- Cyan carbon core gem at crossbar junction -->
+  <polygon points="256,174 286,204 256,234 226,204" fill="#38BDF8" stroke="#0C0A09" stroke-width="10"/>
+</svg>

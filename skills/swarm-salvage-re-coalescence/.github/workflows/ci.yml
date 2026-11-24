@@ -1,0 +1,49 @@
+name: Swarm Salvage Re-Coalescence CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  selftest:
+    name: ${{ matrix.os }} (${{ matrix.mode }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        mode: [stdlib, pyyaml]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install optional PyYAML
+        if: matrix.mode == 'pyyaml'
+        run: python -m pip install --no-cache-dir pyyaml
+      - name: Run 10-case Popperian self-test (zero bytecode)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python -B scripts/salvage_re_coalesce.py --selftest
+      - name: Verify example salvage -> partition -> seal -> verify workflow
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        shell: bash
+        run: |
+          tmpdir="$(mktemp -d)"
+          python -B scripts/salvage_re_coalesce.py salvage \
+            --spec examples/salvage_spec.example.json \
+            --out "$tmpdir/salvage_report.json"
+          python -B scripts/salvage_re_coalesce.py partition \
+            --report "$tmpdir/salvage_report.json" \
+            --roster examples/roster.example.json \
+            --out "$tmpdir/plan.json"
+          python -B scripts/salvage_re_coalesce.py seal \
+            --root . \
+            --out "$tmpdir/capsule.json" \
+            --name swarm-salvage-re-coalescence
+          python -B scripts/salvage_re_coalesce.py verify \
+            --capsule "$tmpdir/capsule.json" \
+            --root .

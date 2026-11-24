@@ -1,0 +1,74 @@
+{
+  "schema": "skill_tree_anchor.v5",
+  "stability_invariant": "Stability = integral(Anchor * Presence) dt -> infinity",
+  "flags": {
+    "permanent_skill_tree_anchor": true,
+    "maximum_carbon_layering_orchestration": true,
+    "flash_shunt_engaged": true,
+    "progressive_lod_0_1_2": true,
+    "exodia_compaction_gate_25_to_1": true,
+    "stage0_deterministic_precompensation": true,
+    "unsigned_idle_handoff_30m": true
+  },
+  "carbon_layering_stack": [
+    {
+      "layer": "L0_GENESIS_ANCHOR",
+      "role": "Immutable operational anchor and invariant persistence across sessions",
+      "skill": "permanent-skill-tree-anchor",
+      "enabled": true
+    },
+    {
+      "layer": "L1_STAGE0_DETERMINISTIC_SLICE",
+      "role": "Local deterministic AST and SHA-256 slicing (<= 160 lines, < 300-token stdout deltas)",
+      "max_slice_lines": 160,
+      "max_stdout_delta_tokens": 300,
+      "enabled": true
+    },
+    {
+      "layer": "L2_KPPC_PROGRESSIVE_LOD",
+      "role": "Progressive LOD 0 (Objective) -> LOD 1 (Contracts) -> LOD 2 (Transient Slices)",
+      "lod_level": 2,
+      "invariants_preserved": true,
+      "enabled": true
+    },
+    {
+      "layer": "L3_APEX_CONTACTOR_FLASH_SHUNT",
+      "role": "Direct Stage 0 -> Stage Apex routing with hard Flash/Lite bypass",
+      "max_escalation_packet_tokens": 6000,
+      "env_locks": {
+        "FLASH_SHUNT": "1",
+        "REASONING_EFFORT": "high"
+      },
+      "model_tier_policy": {
+        "minimum_floor": "gemini-4-hydrogen-xhigh",
+        "default_high_cap_families": [
+          "gemini-4-neon",
+          "gemini-4-argon",
+          "gemini-4-carbon"
+        ],
+        "default_high_cap_level": "high",
+        "require_explicit_swarm_model": true,
+        "disallowed_tiers": [
+          "flash",
+          "lite",
+          "mini",
+          "haiku",
+          "nano",
+          "gemini-flash-worker-agy",
+          "gemini-4-hydrogen-low",
+          "gemini-4-hydrogen-medium",
+          "gemini-4-hydrogen-high"
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "layer": "L4_EXODIA_COMPACTION_GATE",
+      "role": "25:1 cache-read compaction gate + 30-minute unsigned idle handoff",
+      "ratio_threshold": "25.0:1",
+      "turn_threshold": 25,
+      "enabled": true
+    }
+  ],
+  "anchored_runtime_skills": []
+}

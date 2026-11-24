@@ -1,0 +1,34 @@
+{
+  "goal_title": "Example Commensurate Finish Swarm",
+  "goal_line": "Recover pending audits, harden docs, verify SHA-256 parity.",
+  "workers": [
+    {
+      "name": "schema-builder",
+      "role": "author",
+      "model": "gemini-4-carbon-high",
+      "owned_paths": [
+        "SKILL.md"
+      ],
+      "task": "Keep SKILL.md synchronized with CLI contracts"
+    },
+    {
+      "name": "cli-hardener",
+      "role": "author",
+      "model": "gemini-4-hydrogen-xhigh",
+      "owned_paths": [
+        "scripts/salvage_re_coalesce.py"
+      ],
+      "task": "Maintain deterministic Stage-0 salvage logic"
+    },
+    {
+      "name": "parity-verifier",
+      "role": "verifier",
+      "model": "gemini-4-neon-high",
+      "depends_on": [
+        "schema-builder",
+        "cli-hardener"
+      ],
+      "task": "Verify selftest and SHA-256 capsule parity read-only"
+    }
+  ]
+}
